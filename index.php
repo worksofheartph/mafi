@@ -26,7 +26,18 @@
     </div>
   </section>
   <section id="home-programs">
-    <div id="home-programs-slider"></div>
+    <div id="home-programs-slider">
+      <div
+        class="slider"
+        data-gap="80"
+        data-anchor="0"
+        data-hanger="8.3333%"
+      >
+        <div class="panel"><img src="https://source.unsplash.com/1072x484?tree"></div>
+        <div class="panel"><img src="https://source.unsplash.com/1072x484?tree"></div>
+        <div class="panel"><img src="https://source.unsplash.com/1072x484?tree"></div>
+      </div>
+    </div>
     <div id="home-programs-info" class="two-col">
       <div>
         <h1>Our Programs <?php echo file_get_contents("images/icon-educ.svg"); ?> <?php echo file_get_contents("images/icon-envi.svg"); ?> <?php echo file_get_contents("images/icon-culture.svg"); ?> </h1>
@@ -45,22 +56,27 @@
       <h1>Stories</h1>
       <a href="" class="button dark-beige">VIEW ALL</a>
     </div>
-    <div class="stories-grid">
-      <div class="story-item">
+    <div
+      class="stories-grid slider"
+      data-gap="40"
+      data-anchor="0"
+      data-hanger="8.3333%"
+    >
+      <div class="story-item panel">
         <img src="images/photo-4.png">
         <div class="story-info">
           <h3>MAFI’S first Lumad Agricultural Engineering graduate</h3>
           <h5 class="author">Jan Michael Barila</h5>
         </div>
       </div>
-      <div class="story-item">
+      <div class="story-item panel">
         <img src="images/photo-5.png">
         <div class="story-info">
           <h3>MAFI’s first lawyer scholar now protecting indigenous people’s rights</h3>
           <h5 class="author">Atty. Ivyrose Paz</h5>
         </div>
       </div>
-      <div class="story-item">
+      <div class="story-item panel">
         <img src="images/photo-6.png">
         <div class="story-info">
           <h3>MAFI’S first Lumad Agricultural Engineering graduate</h3>

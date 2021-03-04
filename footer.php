@@ -9,6 +9,7 @@
     <div></div>
   </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/3.8.0/flicking.pkgd.min.js" integrity="sha512-G4QlHVh39cSIDLQ5oTt/7pWWQwIh2H7zNioTOjBBVbiJKLqF5T0e87ExUAz5AJyjtw1IOw8wc0/7sO98I+kfmQ==" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

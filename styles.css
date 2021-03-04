@@ -407,7 +407,33 @@ section {
 }
 
 #home-programs-slider {
+  background: linear-gradient(
+    180deg, var(--beige-light) 67%,
+    rgba(0, 0, 0, 0) 67%
+  );
+  overflow-x: hidden;
+}
 
+#home-programs-slider {
+  display: flex;
+  align-items: flex-end;
+  height: 600px;
+}
+
+#home-programs-slider > .slider {
+  flex: 1;
+  height: 484px;
+}
+
+#home-programs-slider > .slider .panel {
+  max-width: calc(20 / 24 * 100%);
+  width: 1072px;
+}
+
+#home-programs-slider > .slider .panel > img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
 }
 
 #home-programs-info {
@@ -449,7 +475,8 @@ h1 svg {
 #home-stories {
   background-image: url(images/home-stories.png);
   background-position: left bottom;
-  background-size: calc(6 / 24 * 100%); auto;
+  background-size: calc(6 / 24 * 100%);
+  overflow-x: hidden;
 }
 
 .stories-grid, .news-grid, .mile-grid {
