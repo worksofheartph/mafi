@@ -67,13 +67,13 @@
       </ul>
     </div>
   </section>
-  <section id="stories" class="dark-beige">
+  <section id="home-stories" class="dark-beige">
     <div class="section-heading">
       <h1>Stories</h1>
       <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
     </div>
     <div
-      class="stories-grid slider"
+      class="stories-list slider"
       data-gap="40"
       data-anchor="0"
       data-hanger="8.3333%"

@@ -104,7 +104,7 @@
     <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
   </div>
   <div
-    class="stories-grid slider"
+    class="stories-list slider"
     data-gap="40"
     data-anchor="0"
     data-hanger="8.3333%"

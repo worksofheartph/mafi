@@ -649,11 +649,11 @@ h1 svg {
   margin: 0 0.1em;
 }
 
-#stories {
+#home-stories {
   overflow-x: hidden;
 }
 
-.stories-grid,
+.stories-list,
 .news-grid,
 .mile-grid {
   display: flex;
@@ -984,7 +984,7 @@ option {
   max-width: 100%;
 }
 
-#prog-hero {
+#prog-hero, #stories-hero {
   align-items: flex-end;
   padding: 20em calc(2 / 24 * 100%) 4em;
 }
@@ -998,6 +998,14 @@ option {
   right: 10em;
   bottom: 10em;
   height: 60%;
+  width: auto;
+}
+
+#stories-hero > svg {
+  position: absolute;
+  right: 10em;
+  bottom: 0em;
+  height: 90%;
   width: auto;
 }
 
@@ -1238,18 +1246,53 @@ span#noEasy:hover {
 
 .pagination li:hover {
   border: 1px solid var(--teal);
-  cursor: pointer;
+  cursor: 
+}
+
+#stories-page {
+  padding: 0 0 5em;
+   background: linear-gradient(
+    180deg,
+    var(--beige-dark) 10%,
+    var(--beige-light) 10%
+  ); 
+ }
+
+#stories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 calc(2 / 24 * 100%);
+}
+
+#stories-grid .story-item {
+  width: 48%;
+  margin-bottom: 4em;
+  background-color: var(--cream);
+  cursor: inherit;
 }
 
 
 
+#stories-grid .story-item img {
+  height: 250px;
+}
 
+#stories-grid .story-item:hover img {
+  height: 265px;
+} 
 
+#stories-grid .story-item .story-info {
+  padding: 2em 3em 2em 2em;
+}
 
+#stories-grid .story-item:hover .story-info {
+  margin: 0;
+} 
 
-
-
-
+#stories-grid .story-item .story-info p {
+  margin: 1.5em 0 2em;
+}
 
 
 
