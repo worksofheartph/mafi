@@ -128,6 +128,59 @@
     </div>
        <?php include('bot.php'); ?> 
   </section>
+  <section id="about-partners" class="beige center-title center-text">
+     <div class="section-title">
+      <h1>Our Partners</h1>   
+    </div>
+    <div id="partners-list">
+      <h3>The Multi-Sectoral Management Group (MSMG)/Founding Members</h3>
+      <br/>
+      <img src="images/home-partners-logos.png">
+      <br/><br/><br/><br/><br/>
+      <h3>Accrediting and Regulatory Agencies</h3>
+      <br/>
+      <img src="images/ara-logos.png">
+      <br/><br/><br/><br/><br/>
+      <h3>Partners in the Area of Responsibility </h3>
+      <br/>
+      <img src="images/par-logos.png">
+      <br/><br/><br/><br/><br/>
+      <h3>Donors, Benefactors & Volunteer Groups (2019 Earthquake Calamity)</h3>
+      <br/>
+      <img src="images/dbv-logos.png">
+      <br/><br/>
+      <p>MOCOMEA, Inc. (Misamis Oriental)<br/>
+Givest<br/>
+Zuellig Pharma<br/>
+High Temp Industrial Corp.<br/>
+South Cotabato Dental Society<br/>
+Porticus Resto Bar<br/>
+Kidapawan Musicians Club<br/>
+39th Infantry Brigade, AFP<br/>
+Kidapawan IP Deputy Mayor’s Office<br/>
+ICON-SP<br/>
+GenSan Educators Mountaineering Society<br/>
+Kilusang Pagbabago<br/>
+Kalumad<br/>
+GenSan Team<br/>
+People of South Cotabato<br/>
+People of Pres. Roxas<br/><br/>
+
+Countless Friends and Individuals Locally, Nationally, and Internationally who donated during the 2019 Earthquake Calamity and rendered their voluntary services</p>
+<br/><br/><br/>
+<h3>Other Partners</h3>
+<br/>
+<p>Kasilak Development Foundation, Inc.<br/>
+Philippine National Bank<br/>
+Obo Manobo Active Language Resource and Community Development, Inc. (OMALRACDI)<br/>
+Works of Heart Creatives, Inc.<br/>
+Philippine Business for Social Progress (PBSP) through Ms. Virgie Ongkiko (Consultant)<br/>
+Balagot & Company CPA's<br/>
+Mahintana Foundation, Inc.<br/>
+</p>
+
+    </div>
+  </section>
   <footer>
     <div id="footer-cta" style="background-image: url(images/banner-cta-1.png">
       <div class="footer-cta-content">

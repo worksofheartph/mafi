@@ -670,8 +670,8 @@ h1 svg {
 }
 
 #about-vm {
-  padding: 5em calc(3/ 24 * 100%) 12em; 
-  background-image: url(images/about-vm-bg.png);
+  padding: 8em calc(3/ 24 * 100%) 18em; 
+  background-image: url(images/about-vm-bg.svg);
   background-size: 100% auto;
   background-position: bottom center;
 }
@@ -827,7 +827,14 @@ background-position: center right;
 }
 
 
+#partners-list {
+  padding: 0 calc(2 / 12 * 100%);
+  margin-top: 3em;
+}
 
+#partners-list img {
+  max-width: 100%;
+}
 
 
 
