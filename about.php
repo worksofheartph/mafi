@@ -47,11 +47,11 @@
     <div id="recent-milestones">
       <div class="section-heading">
         <h3>Recent Milestones</h3>
-        <a href="milestones.php" class="button">VIEW ALL</a>
+        <a href="milestones.php" class="button dark-beige-text">VIEW ALL</a>
       </div>
       <div id="mile-divider">
         <div id="mile-divider-circle"></div>
-        <?php echo file_get_contents("images/svg-mile-line.svg"); ?></div>
+      <?php echo file_get_contents("images/svg-mile-line.svg"); ?></div>
       <div class="mile-grid">
         <div class="mile-item">
           <img src="images/photo-4.png">
@@ -60,31 +60,82 @@
             <p>MAFI’s accreditation application as official NGO partner in the Province of Cotabato was approved.</p>
           </div>
         </div>
-      <div class="mile-item">
-        <img src="images/photo-4.png">
-        <div class="mile-info">
-          <h4>September 2020</h4>
-          <p>Initiated the process of redesigning the MAFI website through the assistance of the Works of Heart Creatives, Inc., to carry the new brand of the foundation and to better promote MAFI for resource mobilization.</p>
+        <div class="mile-item">
+          <img src="images/photo-4.png">
+          <div class="mile-info">
+            <h4>September 2020</h4>
+            <p>Initiated the process of redesigning the MAFI website through the assistance of the Works of Heart Creatives, Inc., to carry the new brand of the foundation and to better promote MAFI for resource mobilization.</p>
+          </div>
+        </div>
+        <div class="mile-item">
+          <img src="images/photo-4.png">
+          <div class="mile-info">
+            <h4>August 2020</h4>
+            <p>Soap Making Project was initiated as a concrete response of MAFI to COVID-19 pandemic as a platform to raise awareness on the importance of handwashing to protect against the virus, to promote MAFI as a foundation, and to raise funds for community livelihood support.</p>
+          </div>
         </div>
       </div>
-    <div class="mile-item">
-      <img src="images/photo-4.png">
-      <div class="mile-info">
-        <h4>August 2020</h4>
-        <p>Soap Making Project was initiated as a concrete response of MAFI to COVID-19 pandemic as a platform to raise awareness on the importance of handwashing to protect against the virus, to promote MAFI as a foundation, and to raise funds for community livelihood support.</p>
-      </div>
     </div>
-  </div>
-</div>
-</section>
-<footer>
-<div id="footer-cta" style="background-image: url(images/banner-cta-1.png">
-  <div class="footer-cta-content">
-    <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
-    <h2>Contribute to the cause</h2>
-    <a href="" class="button cream">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
-  </div>
-  <img src="images/footer-cta-bg.png" class="footer-cta-bg">
-  <div class="overlay"></div>
-</div>
-<?php include('footer.php'); ?>
+  </section>
+  <section id="about-ar" class="light-beige center-title">
+    <div class="section-title">
+      <h1>Annual Reports</h1>
+      <h4 class="dark-beige-text">Read our publications to learn more about MAFI ‘s work through the years</h4>
+    </div>
+    <ul id="pub-list">
+      <li><h3>Annual Report 2020</h3>
+        <div class="pub-info">
+          <h5 class="dark-beige-text">PDF</h5>
+          <h5 class="dark-beige-text">0.0KB</h5>
+          <a href="" class="button">DOWNLOAD</a>
+        </div>
+      </li>
+      <li><h3>Annual Report 2019</h3>
+        <div class="pub-info">
+          <h5 class="dark-beige-text">PDF</h5>
+          <h5 class="dark-beige-text">0.0KB</h5>
+          <a href="" class="button">DOWNLOAD</a>
+        </div>
+      </li>
+      <li><h3>Annual Report 2018</h3>
+        <div class="pub-info">
+          <h5 class="dark-beige-text">PDF</h5>
+          <h5 class="dark-beige-text">0.0KB</h5>
+          <a href="" class="button">DOWNLOAD</a>
+        </div>
+      </li>
+      <li><h3>Annual Report 2017</h3>
+        <div class="pub-info">
+          <h5 class="dark-beige-text">PDF</h5>
+          <h5 class="dark-beige-text">0.0KB</h5>
+          <a href="" class="button">DOWNLOAD</a>
+        </div>
+      </li>
+      <li><h3>Annual Report 2016</h3>
+        <div class="pub-info">
+          <h5 class="dark-beige-text">PDF</h5>
+          <h5 class="dark-beige-text">0.0KB</h5>
+          <a href="" class="button">DOWNLOAD</a>
+        </div>
+      </li>
+    </ul>
+    <a href="publications.php" class="button center-text dark-beige-text">VIEW ALL PUBLICATIONS</a>
+  </section>
+  <section id="bot" class="dark-beige center-title">
+    <div class="section-title">
+      <h1>Board of Trustees</h1>
+      <p>The foundation is a non-stock, non-profit corporation with nine-member board of trustees which acts as the policy-making body of the foundation. The board of trustees is composed of various sectors coming from the local government units, indigenous/tribal people, national government agencies and corporation and non-government organization.</p>
+    </div>
+       <?php include('bot.php'); ?> 
+  </section>
+  <footer>
+    <div id="footer-cta" style="background-image: url(images/banner-cta-1.png">
+      <div class="footer-cta-content">
+        <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
+        <h2>Contribute to the cause</h2>
+        <a href="getinvolved.php" class="button cream">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
+      </div>
+      <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
+      <div class="overlay"></div>
+    </div>
+    <?php include('footer.php'); ?>

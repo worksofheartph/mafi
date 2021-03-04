@@ -12,7 +12,7 @@
     <?php echo file_get_contents("images/svg-mountain.svg"); ?>
     <?php echo file_get_contents("images/line.svg"); ?>
   </section>
-  <section id="home-about">
+  <section id="home-about" class="green center-text">
     <div id="home-about-intro">
       Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.
       <div id="home-about-numbers">
@@ -47,14 +47,14 @@
       <ul class="link-list">
         <h3>More Info</h3>
         <li><a href="about.php" class="button">What we do <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-        <li><a href="" class="button">Publications <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
+        <li><a href="publications.php" class="button">Publications <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
       </ul>
     </div>
   </section>
   <section id="home-stories" class="dark-beige">
     <div class="section-heading">
       <h1>Stories</h1>
-      <a href="" class="button dark-beige">VIEW ALL</a>
+      <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
     </div>
     <div
       class="stories-grid slider"
@@ -86,10 +86,10 @@
     </div>
   </section>
   <section id="home-news">
-    <?php echo file_get_contents("images/svg-divider-line.svg"); ?>
+    <div class="divider-line"><?php echo file_get_contents("images/svg-divider-line.svg"); ?></div>
     <div class="section-heading">
       <h1>Latest News</h1>
-      <a href="" class="button">VIEW ALL</a>
+      <a href="news.php" class="button view-all">VIEW ALL</a>
     </div>
     <div class="news-grid">
       <div class="news-item">
@@ -115,19 +115,19 @@
       </div>
     </div>
   </section>
-  <section id="home-partners" class="flex">
-<h1>Our Partners</h1>
-<br/>
-<img src="images/home-partners-logos.png">
+  <section id="home-partners" class="flex center-title light-beige">
+    <div class="sectiont-title"><h1>Our Partners</h1></div>
+    <br/>
+    <img src="images/home-partners-logos.png">
   </section>
   <footer>
     <div id="footer-cta" style="background-image: url(images/banner-cta-1.png">
       <div class="footer-cta-content">
         <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
         <h2>Contribute to the cause</h2>
-        <a href="" class="button cream">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
+        <a href="getinvolved.php" class="button cream">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
       </div>
-      <img src="images/footer-cta-bg.png" class="footer-cta-bg">
+      <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
       <div class="overlay"></div>
     </div>
     <?php include('footer.php'); ?>
