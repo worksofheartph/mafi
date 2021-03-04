@@ -27,7 +27,7 @@
     <?php echo file_get_contents("images/datu.svg"); ?>
   </section>
   <section id="home-programs">
-    <div id="home-programs-slider">
+    <div id="home-programs-slider" class="section-slider">
       <div
         class="slider"
         data-gap="80"
@@ -67,7 +67,7 @@
       </ul>
     </div>
   </section>
-  <section id="home-stories" class="dark-beige">
+  <section id="stories" class="dark-beige">
     <div class="section-heading">
       <h1>Stories</h1>
       <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
