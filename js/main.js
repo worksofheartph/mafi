@@ -1,28 +1,31 @@
-function showHide(elem) {
-  if (elem.selectedIndex !== 0) {
-    //hide the divs
-    for (var i = 0; i < divsO.length; i++) {
-      divsO[i].style.display = "none";
+(function () {
+  var select = document.querySelector(".toggle-select");
+  var toggles = document.querySelectorAll(".toggle");
+
+  function toggle(el) {
+    if (el.selectedIndex !== 0) {
+      for (var i = 0; i < toggles.length; i++) {
+        toggles[i].style.display = toggles[i].id === el.value ? "flex" : "none";
+      }
     }
-    //unhide the selected div
-    document.getElementById(elem.value).style.display = "flex";
   }
-}
 
-window.onload = function () {
-  //get the divs to show/hide
-  divsO = document.getElementById("bot").getElementsByClassName("bot-grid");
-};
+  select.addEventListener("change", function (e) {
+    toggle(e.target);
+  });
+})();
 
-const root = document.documentElement;
+(function () {
+  const root = document.documentElement;
 
-document.addEventListener("mousemove", (evt) => {
-  let x = evt.clientX / innerWidth;
-  let y = evt.clientY / innerHeight;
+  document.addEventListener("mousemove", (evt) => {
+    let x = evt.clientX / innerWidth;
+    let y = evt.clientY / innerHeight;
 
-  root.style.setProperty("--mouse-x", x * innerWidth - 110);
-  root.style.setProperty("--mouse-y", y);
-});
+    root.style.setProperty("--mouse-x", x * innerWidth - 110);
+    root.style.setProperty("--mouse-y", y);
+  });
+})();
 
 (function () {
   var menu = document.querySelector("header");

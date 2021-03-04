@@ -1,6 +1,6 @@
 <div class="dp-select">
   <div class="dp-list">
-    <select name="bot-list" onchange="showHide(this)">
+    <select name="bot-list" class="toggle-select">
       <option selected="true" disabled="disabled">Year</option>
       <option value="bot-2020">Present</option>
       <option value="bot-July-2016">July 2016</option>
@@ -19,7 +19,7 @@
     </select>
   </div>
   <div clas="dp-options">
-    <div id="bot-2020" class="bot-grid flex center-text">
+    <div id="bot-2020" class="toggle bot-grid flex center-text">
       <div>
         <img src="images/bot/barcena.png">
         <h3>Atty. Allan V. Barcena</h3>
@@ -66,7 +66,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-July-2016" class="bot-grid flex center-text">
+    <div id="bot-July-2016" class="toggle bot-grid flex center-text">
       <div>
         <h3>Atty. Allan Barcena</h3>
         <h4>Chairman</h4>
@@ -104,7 +104,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Feb-2015" class="bot-grid flex center-text">
+    <div id="bot-Feb-2015" class="toggle bot-grid flex center-text">
       <div>
         <h3>Atty. Allan Barcena</h3>
         <h4>Chairman</h4>
@@ -142,7 +142,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Dec-2013" class="bot-grid flex center-text">
+    <div id="bot-Dec-2013" class="toggle bot-grid flex center-text">
       <div>
         <h3>Marcelino M. Tongco</h3>
         <h4>Chairman</h4>
@@ -180,7 +180,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Nov-2010" class="bot-grid flex center-text">
+    <div id="bot-Nov-2010" class="toggle bot-grid flex center-text">
       <div>
         <h3>Marcelino M. Tongco</h3>
         <h4>Chairman</h4>
@@ -218,7 +218,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-May-2010" class="bot-grid flex center-text">
+    <div id="bot-May-2010" class="toggle bot-grid flex center-text">
       <div>
         <h3>Marcelino M. Tongco</h3>
         <h4>Chairman</h4>
@@ -256,7 +256,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-May-2008" class="bot-grid flex center-text">
+    <div id="bot-May-2008" class="toggle bot-grid flex center-text">
       <div>
         <h3>Marcelino M. Tongco</h3>
         <h4>Chairman</h4>
@@ -294,7 +294,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Aug-2006" class="bot-grid flex center-text">
+    <div id="bot-Aug-2006" class="toggle bot-grid flex center-text">
       <div>
         <h3>Marcelino M. Tongco</h3>
         <h4>Chairman</h4>
@@ -332,7 +332,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Jul-2003" class="bot-grid flex center-text">
+    <div id="bot-Jul-2003" class="toggle bot-grid flex center-text">
       <div>
         <h3>Marcelino M. Tongco</h3>
         <h4>Chairman</h4>
@@ -370,7 +370,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Feb-2003" class="bot-grid flex center-text">
+    <div id="bot-Feb-2003" class="toggle bot-grid flex center-text">
       <div>
         <h3>Leonardo Ote</h3>
         <h4>Chairman</h4>
@@ -408,7 +408,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-Aug-2002" class="bot-grid flex center-text">
+    <div id="bot-Aug-2002" class="toggle bot-grid flex center-text">
       <div>
         <h3>Leonardo Ote</h3>
         <h4>Chairman</h4>
@@ -446,7 +446,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-2000" class="bot-grid flex center-text">
+    <div id="bot-2000" class="toggle bot-grid flex center-text">
       <div>
         <h3>Leonardo Ote</h3>
         <h4>Chairman</h4>
@@ -484,7 +484,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-1998" class="bot-grid flex center-text">
+    <div id="bot-1998" class="toggle bot-grid flex center-text">
       <div>
         <h3>Leonardo Ote</h3>
         <h4>Chairman</h4>
@@ -522,7 +522,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-1996" class="bot-grid flex center-text">
+    <div id="bot-1996" class="toggle bot-grid flex center-text">
       <div>
         <h3>Monico Jacob</h3>
         <h4>Chairman</h4>
@@ -560,7 +560,7 @@
         <h4>Member</h4>
       </div>
     </div>
-    <div id="bot-1993" class="bot-grid flex center-text">
+    <div id="bot-1993" class="toggle bot-grid flex center-text">
       <div>
         <h3>Monico Jacob</h3>
         <h4>Chairman</h4>
