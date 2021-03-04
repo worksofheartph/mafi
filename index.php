@@ -32,10 +32,25 @@
         data-gap="80"
         data-anchor="0"
         data-hanger="8.3333%"
-      >
-        <div class="panel"><img src="https://source.unsplash.com/1072x484?tree"></div>
-        <div class="panel"><img src="https://source.unsplash.com/1072x484?tree"></div>
-        <div class="panel"><img src="https://source.unsplash.com/1072x484?tree"></div>
+        >
+        <div class="panel">
+          <a href="program-educ.php"><h2>Educational Development Program</h2>
+            <h5 class="button">LEARN MORE </h5></a>
+          <img src="images/banner-program-educ.png">
+          <div class="overlay"></div>
+        </div>
+        <div class="panel">
+          <a href="program-educ.php"><h2>Community and Environment Program</h2>
+          <h5 class="button">LEARN MORE </h5></a>
+          <img src="images/banner-program-envi.png">
+          <div class="overlay"></div>
+        </div>
+        <div class="panel">
+          <a href="program-educ.php"><h2>Cultural Heritage Program</h2>
+          <h5 class="button">LEARN MORE </h5></a>
+          <img src="images/banner-program-culture.png">
+          <div class="overlay"></div>
+        </div>
       </div>
     </div>
     <div id="home-programs-info" class="two-col">
@@ -61,27 +76,27 @@
       data-gap="40"
       data-anchor="0"
       data-hanger="8.3333%"
-    >
+      >
       <div class="story-item panel">
         <img src="images/photo-4.png">
-        <div class="story-info">
+        <a href="story.php" class="story-info">
           <h3>MAFI’S first Lumad Agricultural Engineering graduate</h3>
           <h5 class="author">Jan Michael Barila</h5>
-        </div>
+        </a>
       </div>
       <div class="story-item panel">
         <img src="images/photo-5.png">
-        <div class="story-info">
+        <a href="story.php" class="story-info">
           <h3>MAFI’s first lawyer scholar now protecting indigenous people’s rights</h3>
           <h5 class="author">Atty. Ivyrose Paz</h5>
-        </div>
+        </a>
       </div>
       <div class="story-item panel">
         <img src="images/photo-6.png">
-        <div class="story-info">
+        <a href="story.php" class="story-info">
           <h3>MAFI’S first Lumad Agricultural Engineering graduate</h3>
           <h5 class="author">Jan Michael Barila</h5>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -94,24 +109,24 @@
     <div class="news-grid">
       <div class="news-item">
         <img src="images/photo-1.png">
-        <div class="news-info">
+        <a href="news-story.php" class="news-info">
           <h3>Meeting the Challenges of COVID-19 Pandemic: MAFI's pivot in its operations</h3>
           <h5 class="date" style="--color: var(--yellow)">August 2, 2020</h5>
-        </div>
+        </a>
       </div>
       <div class="news-item">
         <img src="images/photo-2.png">
-        <div class="news-info">
+        <a href="news-story.php" class="news-info">
           <h3>MAFI's Response to the 2019 Earthquakes in Mindanao</h3>
           <h5 class="date" style="--color: var(--green)">August 2, 2020</h5>
-        </div>
+        </a>
       </div>
       <div class="news-item">
         <img src="images/photo-3.png">
-        <div class="news-info">
+        <a href="news-story.php" class="news-info">
           <h3>2018 Institutional Pivot: In Search of Strategic and Policy Directions</h3>
           <h5 class="date" style="--color: var(--red)">August 2, 2020</h5>
-        </div>
+        </a>
       </div>
     </div>
   </section>
