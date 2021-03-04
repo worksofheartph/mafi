@@ -137,7 +137,7 @@
     <img src="images/home-partners-logos.png">
   </section>
   <footer>
-    <div id="footer-cta" style="background-image: url(images/banner-cta-1.png">
+    <div id="footer-cta" style="background-image: url(images/banner-cta-1.png)">
       <div class="footer-cta-content">
         <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
         <h2>Contribute to the cause</h2>

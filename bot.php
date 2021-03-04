@@ -1,7 +1,7 @@
 <div class="dp-select">
   <div class="dp-list">
     <select name="bot-list" onchange="showHide(this)">
-      <option >Year</option>
+      <option selected="true" disabled="disabled">Year</option>
       <option value="bot-2020">Present</option>
       <option value="bot-July-2016">July 2016</option>
       <option value="bot-Feb-2015">Feb 2015</option>

@@ -879,6 +879,7 @@ h1 svg {
 
 #pub-list {
   margin: 4em 0 3em;
+  padding: 0;
 }
 
 #pub-list li {
@@ -933,7 +934,7 @@ h1 svg {
 select {
   background-color: transparent;
   border: none;
-  padding: 0.7em;
+  padding: 0.7em 1.5em 0.7em 1em;
   color: var(--cream);
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -942,6 +943,7 @@ select {
   width: 100%;
   font-family: var(--martel);
   outline-color: var(--beige-light);
+  min-width: 100px;
 }
 
 option {
@@ -949,15 +951,16 @@ option {
   color: var(--green);
 }
 
-option {
-}
 
 .dp-list {
   overflow: hidden;
-  width: calc(2 / 12 * 100%);
   background-image: url("images/arrow-down.svg");
   background-color: var(--green);
   background-position: center right;
+}
+
+#about .dp-list {
+  width: calc(2 / 12 * 100%);
   margin: 2em auto;
 }
 
@@ -1090,6 +1093,159 @@ option {
   border: 2px solid var(--teal);
   transition: 0.3s all ease;
 }
+
+#pub-page {
+  padding: 15em calc(2 / 24 * 100%) 8em;
+}
+
+#pub-filters {
+  justify-content: flex-start;
+}
+
+#pub-filters > * {
+  margin-right: 1em;
+}
+
+#searchform {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0 0;
+    margin: 0;
+}
+
+#searchform input {
+    border: 0px;
+    background: transparent;
+    padding: 8px 10px 5px;
+    outline: none;
+}
+
+
+div#searchBox #searchform {
+  padding: 0;
+    border: 1px solid var(--green);
+    display: inline-block;
+}
+
+div#searchBox #searchform input {
+    padding: 1em 1em 1em 0.25em;
+    display: block;
+}
+
+#searchBox i.fa.fa-search {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sb-icon-search,
+.sb-search-submit {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 3em;
+    text-align: center;
+    cursor: pointer;
+    color: var(--green);
+}
+
+.sb-search-submit {
+    background: #fff;
+    /* IE needs this */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE 5-7 */
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 100;
+}
+
+div#searchBox #searchform .sb-icon-search {
+    /* color: #fff; */
+    /* background: #3f91c3; */
+    z-index: 90;
+    /* font-size: 22px; */
+    font-family: 'FontAwesome';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    top: -1px;
+}
+
+div#searchBox #searchform .sb-icon-search:before {
+    content: "\f002";
+}
+
+span#noEasy {
+    display: block;
+    /* overflow: hidden; */
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding-left: 3px;
+}
+
+span#noEasy input {
+    width: 30px;
+    padding: 0 !important;
+}
+
+
+span#noEasy:hover {
+    color: #444;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0.1em;
+  border: 1px transparent;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.pagination li.selected {
+  border: 1px solid var(--beige-dark);
+}
+
+.pagination li:hover {
+  border: 1px solid var(--teal);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer-cta {
   padding: 5em 0 10em;
