@@ -1,17 +1,17 @@
- function showHide(elem) {
-    if(elem.selectedIndex !== 0) {
-         //hide the divs
-         for(var i=0; i < divsO.length; i++) {
-             divsO[i].style.display = 'none';
-        }
-        //unhide the selected div
-        document.getElementById(elem.value).style.display = 'flex';
+function showHide(elem) {
+  if (elem.selectedIndex !== 0) {
+    //hide the divs
+    for (var i = 0; i < divsO.length; i++) {
+      divsO[i].style.display = "none";
     }
+    //unhide the selected div
+    document.getElementById(elem.value).style.display = "flex";
+  }
 }
 
-window.onload=function() {
-    //get the divs to show/hide
-    divsO = document.getElementById("bot").getElementsByClassName('bot-grid');
+window.onload = function () {
+  //get the divs to show/hide
+  divsO = document.getElementById("bot").getElementsByClassName("bot-grid");
 };
 
 const root = document.documentElement;
@@ -51,8 +51,9 @@ document.addEventListener("mousemove", (evt) => {
       autoResize: true,
       overflow: true,
       circular: true,
+      duration: 250,
     });
-  })
+  });
 })();
 
 function scrollToTargetAdjusted(e) {
@@ -61,7 +62,7 @@ function scrollToTargetAdjusted(e) {
   var elementPosition = element.offsetTop;
   var offsetPosition = elementPosition - headerOffset;
 
-console.log(element.offsetTop);
+  console.log(element.offsetTop);
 
   window.scrollTo({
     top: offsetPosition,
