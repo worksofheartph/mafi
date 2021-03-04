@@ -168,11 +168,11 @@ img.white {
   color: var(--green);
 }
 
-.white header #menuToggle .bars svg {
+.white header #menuToggle .menu-btn svg {
   fill: var(--cream);
 }
 
-.white header.sticky #menuToggle .bars svg {
+.white header.sticky #menuToggle .menu-btn svg {
   fill: var(--brown);
 }
 
@@ -195,16 +195,16 @@ img.white {
   padding: 15px 0px;
 }
 
-#menuToggle:hover .bars {
+#menuToggle:hover .menu-btn {
   background-color: var(--beige-light);
   transition: 0.3s all ease;
 }
 
-#menuToggle .bars {
+#menuToggle .menu-btn {
   width: 45px;
-  border: 2px solid var(--yellow);
-  border-radius: 100px;
   height: 45px;
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
   top: 0;
   padding: 10px 5px;
   z-index: 9998;
@@ -224,11 +224,11 @@ img.white {
   -webkit-touch-callout: none;
 }
 
-#menuToggle input:hover ~ .bars svg {
+#menuToggle input:hover ~ .menu-btn svg {
   fill: var(--brown) !important;
 }
 
-#menuToggle .bars svg {
+#menuToggle .menu-btn svg {
   display: block;
   width: 27px;
   height: 2px;
@@ -242,52 +242,57 @@ img.white {
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menuToggle .bars svg:first-child {
+#menuToggle .menu-btn svg:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle .bars svg:nth-last-child(2) {
+#menuToggle .menu-btn svg:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ .bars {
+#menuToggle input:checked ~ .menu-btn {
   background-color: var(--brown);
   border-color: var(--brown);
 }
 
-#menuToggle input:checked ~ .bars svg {
+#menuToggle input:checked ~ .menu-btn svg {
   opacity: 1;
   transform: rotate(45deg) translate(0, -5px);
   fill: var(--yellow) !important;
 }
 
-#menuToggle input:checked ~ .bars svg:nth-child(2) {
+#menuToggle input:checked ~ .menu-btn svg:nth-child(2) {
   opacity: 0;
 }
 
-#menuToggle input:checked ~ .bars svg:nth-child(3) {
+#menuToggle input:checked ~ .menu-btn svg:nth-child(3) {
   transform: rotate(-45deg) translate(1px, 1px);
 }
 
-#sun {
+#menuToggle .sun {
+  display: block;
+  content: ' ';
   background-color: var(--yellow);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
   width: 50vw;
   height: 50vw;
-  position: absolute;
-  top: -11vw;
-  right: -20vw;
-  border-radius: 50vw;
-  z-index: 1;
+  transform: translate(-50%, -50%) scale(0);
+  transition: none;
+}
+
+#menuToggle input:checked ~ .sun {
+  transform: translate(-60%, -30%) scale(1);
+  transition: transform 0.5s ease;
 }
 
 #menu {
   position: absolute;
   height: 100vh;
-  top: -1em;
-  right: -3vw;
-  opacity: 0; /*  background: var(--yellow);
-    border-bottom-left-radius: 400px; 
-    border-top-left-radius: 400px; */
+  top: 0;
+  right: 0;
   background-size: cover;
   color: white;
   list-style-type: none;
@@ -295,7 +300,7 @@ img.white {
   transform-origin: 0% 0%;
   transform: translate(100%, -50%);
   transition: transform 0.5s ease;
-  padding: 6em 0em 0;
+  padding: 6em 0 0;
   min-width: 350px;
 }
 
@@ -305,11 +310,13 @@ img.white {
   text-decoration: none;
   display: block;
   font-weight: 500;
-  padding: 0.5em 3em;
+  padding: 0.5em;
   margin: 0;
   position: relative;
   z-index: 2;
   text-align: right;
+  opacity: 0;
+  transition: none;
 }
 
 #menu a:hover {
@@ -318,8 +325,12 @@ img.white {
 
 #menuToggle input:checked ~ #menu {
   transform: scale(1, 1);
+}
+
+#menuToggle input:checked ~ #menu a {
   opacity: 1;
-  transition: transform 0.5s ease;
+  transition: opacity ease 0.25s;
+  transition-delay: calc(var(--delay) * 1ms + var(--index) * 100ms);
 }
 
 .dark-beige {

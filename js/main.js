@@ -56,6 +56,14 @@ document.addEventListener("mousemove", (evt) => {
   });
 })();
 
+(function () {
+  var staggered = document.querySelector("[data-stagger]");
+  Array.from(staggered.children).forEach(function (el, i) {
+    el.style.setProperty("--delay", staggered.dataset.delay);
+    el.style.setProperty("--index", i);
+  });
+})();
+
 function scrollToTargetAdjusted(e) {
   var element = document.getElementById(e);
   var headerOffset = document.getElementById("header").offsetHeight;
