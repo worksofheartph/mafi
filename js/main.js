@@ -57,9 +57,11 @@ document.addEventListener("mousemove", (evt) => {
 
 function scrollToTargetAdjusted(e) {
   var element = document.getElementById(e);
-  var headerOffset = 45;
-  var elementPosition = element.getBoundingClientRect().top;
+  var headerOffset = document.getElementById("header").offsetHeight;
+  var elementPosition = element.offsetTop;
   var offsetPosition = elementPosition - headerOffset;
+
+console.log(element.offsetTop);
 
   window.scrollTo({
     top: offsetPosition,

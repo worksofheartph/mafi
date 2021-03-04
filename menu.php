@@ -1,4 +1,4 @@
-<header>
+<header id="header">
   <a href="index.php" class="logo"><img src="images/mafi-logo.png"><img src="images/mafi-logo-white.png" class="white"></a>
   <div id="header-menu">
     <a href="getinvolved.php" class="button" >GET INVOLVED </a>
@@ -12,7 +12,7 @@
       <nav id="menu">
         <div id="sun"></div>
         <a href="about.php">About</a>
-        <a href="">Programs</a>
+        <a href="index.php#home-programs">Programs</a>
         <a href="">Stories</a>
         <a href="">News & Updates</a>
         <a href="">Publication</a>

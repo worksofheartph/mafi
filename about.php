@@ -39,9 +39,9 @@
       <ul class="link-list">
         <h3>Learn More</h3>
         <li><a class="button" onclick="scrollToTargetAdjusted('recent-milestones');">Milestones <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-        <li><a href="" class="button">Annual Reports <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-        <li><a href="" class="button">Board of Trustees  <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-        <li><a href="" class="button">Partners <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
+        <li><a class="button" onclick="scrollToTargetAdjusted('about-ar');">Annual Reports <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
+        <li><a class="button" onclick="scrollToTargetAdjusted('bot');">Board of Trustees  <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
+        <li><a class="button" onclick="scrollToTargetAdjusted('about-partners');">Partners <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
       </ul>
     </div>
     <div id="recent-milestones">
@@ -126,11 +126,11 @@
       <h1>Board of Trustees</h1>
       <p>The foundation is a non-stock, non-profit corporation with nine-member board of trustees which acts as the policy-making body of the foundation. The board of trustees is composed of various sectors coming from the local government units, indigenous/tribal people, national government agencies and corporation and non-government organization.</p>
     </div>
-       <?php include('bot.php'); ?> 
+    <?php include('bot.php'); ?>
   </section>
   <section id="about-partners" class="beige center-title center-text">
-     <div class="section-title">
-      <h1>Our Partners</h1>   
+    <div class="section-title">
+      <h1>Our Partners</h1>
     </div>
     <div id="partners-list">
       <h3>The Multi-Sectoral Management Group (MSMG)/Founding Members</h3>
@@ -150,35 +150,33 @@
       <img src="images/dbv-logos.png">
       <br/><br/>
       <p>MOCOMEA, Inc. (Misamis Oriental)<br/>
-Givest<br/>
-Zuellig Pharma<br/>
-High Temp Industrial Corp.<br/>
-South Cotabato Dental Society<br/>
-Porticus Resto Bar<br/>
-Kidapawan Musicians Club<br/>
-39th Infantry Brigade, AFP<br/>
-Kidapawan IP Deputy Mayor’s Office<br/>
-ICON-SP<br/>
-GenSan Educators Mountaineering Society<br/>
-Kilusang Pagbabago<br/>
-Kalumad<br/>
-GenSan Team<br/>
-People of South Cotabato<br/>
-People of Pres. Roxas<br/><br/>
-
-Countless Friends and Individuals Locally, Nationally, and Internationally who donated during the 2019 Earthquake Calamity and rendered their voluntary services</p>
-<br/><br/><br/>
-<h3>Other Partners</h3>
-<br/>
-<p>Kasilak Development Foundation, Inc.<br/>
-Philippine National Bank<br/>
-Obo Manobo Active Language Resource and Community Development, Inc. (OMALRACDI)<br/>
-Works of Heart Creatives, Inc.<br/>
-Philippine Business for Social Progress (PBSP) through Ms. Virgie Ongkiko (Consultant)<br/>
-Balagot & Company CPA's<br/>
-Mahintana Foundation, Inc.<br/>
-</p>
-
+        Givest<br/>
+        Zuellig Pharma<br/>
+        High Temp Industrial Corp.<br/>
+        South Cotabato Dental Society<br/>
+        Porticus Resto Bar<br/>
+        Kidapawan Musicians Club<br/>
+        39th Infantry Brigade, AFP<br/>
+        Kidapawan IP Deputy Mayor’s Office<br/>
+        ICON-SP<br/>
+        GenSan Educators Mountaineering Society<br/>
+        Kilusang Pagbabago<br/>
+        Kalumad<br/>
+        GenSan Team<br/>
+        People of South Cotabato<br/>
+        People of Pres. Roxas<br/><br/>
+      Countless Friends and Individuals Locally, Nationally, and Internationally who donated during the 2019 Earthquake Calamity and rendered their voluntary services</p>
+      <br/><br/><br/>
+      <h3>Other Partners</h3>
+      <br/>
+      <p>Kasilak Development Foundation, Inc.<br/>
+        Philippine National Bank<br/>
+        Obo Manobo Active Language Resource and Community Development, Inc. (OMALRACDI)<br/>
+        Works of Heart Creatives, Inc.<br/>
+        Philippine Business for Social Progress (PBSP) through Ms. Virgie Ongkiko (Consultant)<br/>
+        Balagot & Company CPA's<br/>
+        Mahintana Foundation, Inc.<br/>
+      </p>
     </div>
   </section>
   <footer>

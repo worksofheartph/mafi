@@ -24,6 +24,7 @@
         </h2>
       </div>
     </div>
+    <?php echo file_get_contents("images/datu.svg"); ?>
   </section>
   <section id="home-programs">
     <div id="home-programs-slider">

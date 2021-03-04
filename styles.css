@@ -23,7 +23,7 @@ html {
   --brown: #3D2F2E;
   --teal: #31A3A3;
   --cream: #F5F1EC;
-  --beige: #DCCFC4;
+  --beige: #C7B5A3;
   --beige-light: #E7DFD7;
   --beige-dark: #A79280;
   --black: #363232;
@@ -368,6 +368,7 @@ opacity: 1;
 section {
   /*display: flex;*/
   padding: 8em calc(2 / 24 * 100%);
+  position: relative;
 }
 
 .section-heading {
@@ -399,11 +400,39 @@ section {
   width: auto;
 }
 
+@keyframes offset {
+      to { stroke-dashoffset: 0; }
+    }
+
+  @keyframes fill-green {
+      to { fill: var(--green); stroke: transparent; }
+    }
+
+      @keyframes fill-beige {
+      to { fill: var(--beige); stroke: transparent; }
+    }
+
+
 #svg-mountain {
   position: absolute;
   bottom: 0;
   right: 0;
-  fill: var(--green);
+  /*fill: var(--green);*/
+
+}
+
+#svg-mountain path {
+  stroke: var(--green);
+  animation: offset 3s ease forwards, fill-green 1s 1s forwards;
+}
+
+#svg-mountain path,
+#svg-heroline path,
+#home-about svg path {
+      stroke-width: 1;
+      stroke-dasharray: 3212;
+      stroke-dashoffset: 3212;
+      fill: transparent;
 }
 
 #svg-heroline {
@@ -412,6 +441,11 @@ section {
   right: 0;
   width: 100%;
   height: auto;
+}
+
+#svg-heroline path {
+  stroke: var(--beige);
+  animation: offset 3s ease forwards, fill-beige 1s 1s forwards;
 }
 
 .divider-line {
@@ -436,13 +470,30 @@ section {
     width: 38%;
   }
 
+
+
+
 #home-about {
-  background-image: url(images/datu.png);
+/*  background-image: url(images/datu.svg);
   background-position: bottom center;
   background-size: 100% auto;
-  padding: 8em calc(7 / 24 * 100%);
+*/  padding: 8em calc(7 / 24 * 100%);
+
 }
 
+#home-about svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+#home-about path {
+  stroke: var(--beige);
+  animation: offset 16s ease forwards, fill-beige 1s 1s forwards;
+}
+ 
 #home-about-numbers {
   color: var(--yellow);
   margin: 5em 0;
@@ -884,11 +935,72 @@ background-position: center right;
   max-width: 100%;
 }
 
+#prog-hero {
+  align-items: flex-end;
+  min-height: 400px;
+  padding: 8em calc(2 / 24 * 100%) 4em;
+}
+
+#prog-hero > svg {
+  position: absolute;
+  right: 10em;
+  bottom: 2em;
+  height: 80%;
+  width: auto;
+}
+
+#prog-list {
+  margin: 0;
+  padding: 0;
+}
+
+#prog-list a {
+  position: relative;
+  z-index: 2
+}
+
+#prog-list a svg {
+  height: 3em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
 
 
+#prog-list li {
+  position: relative;
+  padding: 0.5em 5em 0.5em 1em;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-position: left top;
+  transition: 0.3s all ease;
+  overflow: hidden;
+}
 
+#prog-list li > svg, #prog-list li > svg path {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+    transition: 0.3s all ease;
+}
 
+#prog-list li:hover > svg, #prog-list li:hover > svg path {
+  transition: 0.3s all ease;
+  opacity: 1;
+}
 
+/*.prog-list-educ:hover {
+  background-image: url(images/prog-educ-button-bg.svg);
+  transition: 0.3s all ease;
+}*/
+
+#prog-list li a {
+  display: inline-block;
+}
 
 
 
