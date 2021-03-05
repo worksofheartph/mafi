@@ -101,6 +101,6 @@ enterView({
   enter: function (el) {
     el.classList.add("entered");
   },
-  offset: 0.8,
+  offset: 0.9,
   once: true,
 });

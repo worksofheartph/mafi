@@ -127,6 +127,6 @@
   
   <footer>
     <div id="footer-cta">
-      <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
+      <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
     </div>
     <?php include('footer.php'); ?>

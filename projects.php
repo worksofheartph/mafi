@@ -139,7 +139,7 @@
       <h2>Contribute to the cause</h2>
       <a href="getinvolved.php" class="button">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
     </div>
-    <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
+    <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
     <div class="overlay"></div>
   </div>
   <?php include('footer.php'); ?>

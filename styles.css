@@ -277,8 +277,8 @@ img.white {
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  width: 50vw;
-  height: 50vw;
+  width: 65vw;
+  height: 65vw;
   transform: translate(-50%, -50%) scale(0);
   transition: none;
 }
@@ -455,8 +455,22 @@ section {
   }
 }
 
+@keyframes fill-cream {
+  to {
+    fill: var(--cream);
+    stroke: transparent;
+  }
+}
+
+@keyframes fill-teal {
+  to {
+    fill: var(--teal);
+    stroke: transparent;
+  }
+}
+
 path.animate {
-  stroke-width: 1;
+  stroke-width: 0;
   stroke-dasharray: 3212;
   stroke-dashoffset: 3212;
   fill: transparent;
@@ -467,6 +481,7 @@ path.green {
 }
 
 path.green.entered {
+  stroke-width: 1;
   animation: offset 3s ease forwards, fill-green 1s 1s forwards;
 }
 
@@ -475,6 +490,7 @@ path.beige {
 }
 
 path.beige.entered {
+  stroke-width: 1;
   animation: offset 3s ease forwards, fill-beige 1s 1s forwards;
 }
 
@@ -483,18 +499,51 @@ path.dark-beige {
 }
 
 path.dark-beige.entered {
+  stroke-width: 1;
   animation: offset 3s ease forwards, fill-darkbeige 1s 1s forwards;
 }
+
+path.yellow{
+  stroke: var(--yellow);
+}
+
+path.yellow.entered {
+  stroke-width: 1;
+  animation: offset 3s ease forwards, fill-yellow 1s 1s forwards;
+}
+
+path.cream {
+  stroke: var(--cream);
+}
+
+path.cream.entered {
+  stroke-width: 1;
+  animation: offset 3s ease forwards, fill-cream 1s 1s forwards;
+}
+
+
+path.teal {
+  stroke: var(--teal);
+}
+
+path.teal.entered {
+  stroke-width: 1;
+  animation: offset 3s ease forwards, fill-teal 1s 1s forwards;
+}
+
+
 
 #svg-mountain {
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 90%;
+  height: auto;
 }
 
 #svg-heroline {
   position: absolute;
-  bottom: 1em;
+  bottom: 2em;
   right: 0;
   width: 100%;
   height: auto;
@@ -536,6 +585,7 @@ path.dark-beige.entered {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: auto;
 }
 
 #home-about path {
@@ -787,7 +837,7 @@ h1 svg {
 
 .news-grid .news-item:hover {
   /*background-color: var(--beige-dark);*/
-  cursor: pointer;
+  cursor: inherit;
 }
 
 .story-item:hover img,
@@ -816,7 +866,7 @@ h1 svg {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 90%;
+  height: 75%;
   width: auto;
 }
 
@@ -1542,7 +1592,7 @@ span#noEasy:hover {
   padding: 5em 0 10em;
   position: relative;
   background-color: transparent;
-  background-size: 100% auto;
+  background-size: 110% auto;
   background-position: center;
   text-align: center;
   color: var(--cream);
@@ -1564,10 +1614,11 @@ span#noEasy:hover {
   z-index: 3;
 }
 
-.footer-cta-bg {
+#footer-cta > svg {
   width: 100%;
   position: absolute;
   bottom: -1px;
+  height: auto;
   left: 0;
   z-index: 2;
 }
@@ -1586,7 +1637,7 @@ span#noEasy:hover {
 }
 
 #footer-cols {
-  padding: 2em calc(2 / 24 * 100%) 8em;
+  padding: 2em calc(2 / 24 * 100%) 15em;
   background-color: var(--green);
   color: var(--cream);
 }

@@ -24,21 +24,21 @@
     <div class="news-grid">
       <div class="news-item">
         <img src="images/photo-1.png">
-        <a href="news-story.php" class="news-info">
+        <a href="news-article.php" class="news-info">
           <h3>Meeting the Challenges of COVID-19 Pandemic: MAFI's pivot in its operations</h3>
           <h5 class="date" style="--color: var(--yellow)">August 2, 2020</h5>
         </a>
       </div>
       <div class="news-item">
         <img src="images/photo-2.png">
-        <a href="news-story.php" class="news-info">
+        <a href="news-article.php" class="news-info">
           <h3>MAFI's Response to the 2019 Earthquakes in Mindanao</h3>
           <h5 class="date" style="--color: var(--green)">August 2, 2020</h5>
         </a>
       </div>
       <div class="news-item">
         <img src="images/photo-3.png">
-        <a href="news-story.php" class="news-info">
+        <a href="news-article.php" class="news-info">
           <h3>2018 Institutional Pivot: In Search of Strategic and Policy Directions</h3>
           <h5 class="date" style="--color: var(--red)">August 2, 2020</h5>
         </a>
@@ -47,6 +47,6 @@
   </section>
   <footer>
     <div id="footer-cta">
-      <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
+      <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
     </div>
     <?php include('footer.php'); ?>

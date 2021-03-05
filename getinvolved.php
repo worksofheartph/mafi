@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<body id="home">
+<body id="getinvolved">
   <?php include('menu.php'); ?>
   <section id="home-hero" class="flex">
     <div>
@@ -10,7 +10,7 @@
     </div>
     <img src="images/home-hero-photo.png">
     <?php echo file_get_contents("images/svg-mountain.svg"); ?>
-    <?php echo file_get_contents("images/svg-line.svg"); ?>
+    <?php echo file_get_contents("images/getinvolved-hero-overlay.svg"); ?>
   </section>
   <section id="home-about" class="green center-text">
     <div id="home-about-intro">
@@ -30,7 +30,7 @@
     <div id="home-programs-slider" class="section-slider">
       <div
         class="slider"
-        data-gap="50"
+        data-gap="80"
         data-anchor="0"
         data-hanger="8.3333%"
         >
@@ -74,7 +74,7 @@
     </div>
     <div
       class="stories-list slider"
-      data-gap="30"
+      data-gap="40"
       data-anchor="0"
       data-hanger="8.3333%"
       >
@@ -135,7 +135,6 @@
     <div class="sectiont-title"><h1>Our Partners</h1></div>
     <br/>
     <img src="images/home-partners-logos.png">
-        <?php echo file_get_contents("images/home-partners.svg"); ?>
   </section>
   <footer>
     <div id="footer-cta" style="background-image: url(images/banner-cta-1.png)">
