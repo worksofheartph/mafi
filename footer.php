@@ -1,5 +1,5 @@
 <div id="footer-cols" class="flex">
-  <div><img src="images/mafi_logo_horizontalwhite.png"></div>
+  <div><img src="images/mafi-logo-white.svg"></div>
   <div>2114 Perez Street, Poblacion,<br/>
     Kidapawan City 9400<br/>
   North Cotabato, Philippines</div>

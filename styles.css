@@ -150,6 +150,12 @@ img.white {
   display: none;
 }
 
+.logo img {
+    height: 80px;
+    width: auto;
+    padding: 15px 0;
+}
+
 .white header .logo img,
 .white header.sticky .logo img.white {
   display: none;
@@ -1649,7 +1655,7 @@ span#noEasy:hover {
 }
 
 #footer-cols > div > img {
-  width: 90%;
+  width: 80%;
 }
 
 .ss svg {

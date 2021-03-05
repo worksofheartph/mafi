@@ -1,5 +1,5 @@
 <header id="header">
-  <a href="index.php" class="logo"><img src="images/mafi-logo.png"><img src="images/mafi-logo-white.png" class="white"></a>
+  <a href="index.php" class="logo"><img src="images/mafi_logo_horizontalcolored.svg"><img src="images/mafi-logo-white.svg" class="white"></a>
   <div id="header-menu">
     <a href="getinvolved.php" class="button">GET INVOLVED</a>
     <div id="menuToggle">
