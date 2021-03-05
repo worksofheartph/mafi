@@ -1,21 +1,21 @@
 <?php include('header.php'); ?>
 
-<body id="home">
+<body id="milestones">
   <?php include('menu.php'); ?>
-  <section id="milestones">
+  <section id="milestones-page">
     <div class="dp-list">
       <select class="nav-select">
         <option value="" selected>CHOOSE A DECADE</option>
-        <option value="2020">2020</option>
-        <option value="2010-2019">2010-2019</option>
-        <option value="2000-2009">2000-2009</option>
+        <option value="#">2020</option>
+        <option value="#">2010-2019</option>
+        <option value="#">2000-2009</option>
       </select>
     </div>
     <h2>2020 Milestones</h2>
     <div class="timeline">
       <div class="milestone">
         <div class="milestone-image">
-          <img src="https://source.unsplash.com/272x147?tree">
+          <img src="images/photo-1.png">
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -25,7 +25,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="https://source.unsplash.com/272x147?tree">
+          <img src="images/photo-1.png">
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -35,7 +35,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="https://source.unsplash.com/272x147?tree">
+          <img src="images/photo-1.png">
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -45,7 +45,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="https://source.unsplash.com/272x147?tree">
+          <img src="images/photo-1.png">
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -55,7 +55,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="https://source.unsplash.com/272x147?tree">
+          <img src="images/photo-1.png">
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -65,7 +65,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="https://source.unsplash.com/272x147?tree">
+          <img src="images/photo-1.png">
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">

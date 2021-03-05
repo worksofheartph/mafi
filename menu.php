@@ -13,9 +13,9 @@
       <nav id="menu" data-stagger="true" data-delay="250">
         <a href="about.php">About</a>
         <a href="index.php#home-programs">Programs</a>
-        <a href="">Stories</a>
-        <a href="">News & Updates</a>
-        <a href="">Publication</a>
+        <a href="stories.php">Stories</a>
+        <a href="news.php">News & Updates</a>
+        <a href="publications.php">Publication</a>
         <a href="">Mt. Apo Park</a>
         <a href="">Get Involved</a>
       </nav>

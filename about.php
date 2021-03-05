@@ -9,7 +9,8 @@
     <div class="overlay"></div>
   </section>
   <section id="about-vm" class="flex green">
-    <div>
+    <div class="container flex">
+      <div>
       <h5>Our Collective Vision</h5>
       <h3>Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.</h3>
     </div>
@@ -17,6 +18,8 @@
       <h5>Our Corporate Mission</h5>
       <h3>Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.</h3>
     </div>
+  </div>
+    <?php echo file_get_contents("images/about-vm-bg.svg"); ?>
   </section>
   <section id="about-values">
     <div id="values" class="flex">
@@ -184,7 +187,7 @@
       <div class="footer-cta-content">
         <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
         <h2>Contribute to the cause</h2>
-        <a href="getinvolved.php" class="button cream">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
+        <a href="getinvolved.php" class="button">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
       </div>
       <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
       <div class="overlay"></div>

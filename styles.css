@@ -354,6 +354,10 @@ img.white {
   color: var(--beige-dark);
 }
 
+.cream {
+  background-color: var(--cream);
+}
+
 .green {
   background-color: var(--green);
   color: var(--cream);
@@ -362,6 +366,10 @@ img.white {
 .flex {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-start {
+  align-items: flex-start;
 }
 
 .center-title .section-title > * {
@@ -433,24 +441,47 @@ section {
   }
 }
 
-#svg-mountain {
-  position: absolute;
-  bottom: 0;
-  right: 0; /*fill: var(--green);*/
+@keyframes fill-yellow {
+  to {
+    fill: var(--yellow);
+    stroke: transparent;
+  }
 }
 
-#svg-mountain path {
-  stroke: var(--green);
-  animation: offset 3s ease forwards, fill-green 1s 1s forwards;
+@keyframes fill-darkbeige {
+  to {
+    fill: var(--beige-dark);
+    stroke: transparent;
+  }
 }
 
-#svg-mountain path,
-#svg-heroline path,
-#home-about svg path {
+path.animate {
   stroke-width: 1;
   stroke-dasharray: 3212;
   stroke-dashoffset: 3212;
   fill: transparent;
+}
+
+path.green {
+  stroke: var(--green);
+  animation: offset 3s ease forwards, fill-green 1s 1s forwards;
+}
+
+path.beige {
+  stroke: var(--beige);
+  animation: offset 3s ease forwards, fill-beige 1s 1s forwards;
+}
+
+
+path.dark-beige {
+  stroke: var(--beige-dark);
+  animation: offset 3s ease forwards, fill-darkbeige 1s 1s forwards;
+} 
+
+#svg-mountain {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #svg-heroline {
@@ -461,13 +492,10 @@ section {
   height: auto;
 }
 
-#svg-heroline path {
-  stroke: var(--beige);
-  animation: offset 3s ease forwards, fill-beige 1s 1s forwards;
-}
+
 
 .divider-line {
-  margin: 1em 0 3em;
+  margin: 1em 0 4em;
   overflow: hidden;
 }
 
@@ -649,7 +677,8 @@ h1 svg {
   margin: 0 0.1em;
 }
 
-#home-stories {
+#home-stories,
+#stories {
   overflow-x: hidden;
 }
 
@@ -663,7 +692,7 @@ h1 svg {
 }
 
 .story-item,
-.news-item,
+.news-grid .news-item,
 .mile-item {
   width: 31.5%;
 }
@@ -673,13 +702,13 @@ h1 svg {
   color: var(--black);
 }
 
-.news-item {
+.news-grid .news-item {
   background: var(--black);
   color: var(--cream);
 }
 
 .story-item img,
-.news-item img,
+.news-grid .news-item img,
 .mile-item img {
   width: 100%;
   height: 175px;
@@ -688,7 +717,7 @@ h1 svg {
 }
 
 .story-info,
-.news-info,
+.news-grid .news-info,
 .mile-info {
   padding: 1em 1.5em 1em 1.2em;
   display: flex;
@@ -702,7 +731,7 @@ h1 svg {
 }
 
 .story-info h3,
-.news-info h3 {
+.news-grid .news-info h3 {
   margin-bottom: 0.75em;
   font-weight: 400;
   transition: 0.3s all ease;
@@ -714,7 +743,7 @@ h1 svg {
 }
 
 .story-info h3:hover,
-.news-info h3:hover {
+.news-grid .news-info h3:hover {
   color: var(--teal);
   transition: 0.3s all ease;
 }
@@ -731,7 +760,8 @@ h1 svg {
   display: inline-block;
 }
 
-.date:before {
+.date:before, 
+#news-cat li a:before {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -746,20 +776,20 @@ h1 svg {
   cursor: pointer;
 }
 
-.news-item:hover {
+.news-grid .news-item:hover {
   /*background-color: var(--beige-dark);*/
   cursor: pointer;
 }
 
 .story-item:hover img,
-.news-item:hover img,
+.news-grid .news-item:hover img,
 .mile-item:hover img {
   height: 190px;
   transition: all ease 0.3s;
 }
 
 .story-item:hover .story-info,
-.news-item:hover .news-info {
+.news-grid .news-item:hover .news-info {
   margin-bottom: 0px;
   transition: all ease 0.3s;
 }
@@ -767,9 +797,18 @@ h1 svg {
 #home-partners {
   align-items: center;
   flex-direction: column;
-  background-image: url(images/home-partners.png);
+  /*background-image: url(images/home-partners.svg);*/
   background-position: right bottom;
   background-size: auto 80%;
+  position: relative;
+}
+
+#home-partners > svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 90%;
+  width: auto;
 }
 
 #about-hero {
@@ -819,13 +858,24 @@ h1 svg {
 }
 
 #about-vm {
-  padding: 8em calc(3 / 24 * 100%) 18em;
-  background-image: url(images/about-vm-bg.svg);
-  background-size: 100% auto;
-  background-position: bottom center;
+  padding: 8em 0 18em;
+  position: relative;
 }
 
-#about-vm > * {
+#about-vm .container {
+  padding: 0 calc(3 / 24 * 100%);
+  width: 100%;
+}
+
+#about-vm > svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#about-vm .container > * {
   width: 47%;
   text-align: center;
 }
@@ -889,7 +939,7 @@ h1 svg {
 }
 
 #pub-list {
-  margin: 4em 0 3em;
+  margin: 4em 0 4em;
   padding: 0;
 }
 
@@ -949,7 +999,7 @@ h1 svg {
 select {
   background-color: transparent;
   border: none;
-  padding: 0.7em 1.5em 0.7em 1em;
+  padding: 0.7em 2em 0.7em 1em;
   color: var(--cream);
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -980,7 +1030,7 @@ option {
 
 #partners-list {
   padding: 0 calc(2 / 12 * 100%);
-  margin-top: 3em;
+  margin-top: 4em;
 }
 
 #partners-list img {
@@ -993,9 +1043,12 @@ option {
   padding: 20em calc(2 / 24 * 100%) 4em;
 }
 
-#projects #prog-hero {
-  padding: 8em calc(2 / 24 * 100%) 4em;
+#projects #prog-hero,
+#news-page {
+  padding: 12em calc(2 / 24 * 100%) 4em;
 }
+
+
 
 #prog-hero > svg {
   position: absolute;
@@ -1093,7 +1146,7 @@ option {
 }
 
 #programs-project .two-col {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 .data-item {
@@ -1248,7 +1301,7 @@ span#noEasy:hover {
 
 .pagination li:hover {
   border: 1px solid var(--teal);
-  cursor: ;
+  cursor: pointer;
 }
 
 #stories-page {
@@ -1294,7 +1347,7 @@ span#noEasy:hover {
   margin: 1.5em 0 2em;
 }
 
-#milestones {
+#milestones-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1311,6 +1364,7 @@ span#noEasy:hover {
 .milestone {
   display: flex;
   align-items: baseline;
+  margin: 0 calc( 2 / 24 * 100%);
 }
 
 .milestone > .milestone-dot {
@@ -1328,6 +1382,10 @@ span#noEasy:hover {
   text-align: right;
   flex: 1;
   transform: translateY(50%);
+}
+
+.milestone-image img {
+  width: 60%;
 }
 
 .milestone > .milestone-text {
@@ -1352,9 +1410,132 @@ span#noEasy:hover {
   text-align: right;
 }
 
+#milestones .dp-list {
+  background-color: var(--cream);
+}
+
+ #milestones .nav-select {
+  color: var(--green);
+  padding: 0.7em 2.5em 0.5em 1em;
+ }
+
+#milestones .dp-list {
+    background-image: url(images/arrow-down-brown.svg);
+}
+
+#story-image {
+  background-size: cover;
+  min-height: 500px;
+}
+
+#story-content {
+  margin-top: -15em;
+  padding: 5em calc(1 / 12 * 100%);
+}
+
+#story-content h1 {
+  font-family: var(--faustina);
+  font-weight: 500;
+  margin: 1em 0 1em;
+}
+
+#story-content .author {
+  margin-bottom: 2em;
+}
+
+
+#story #home-stories,
+#news-article #home-news {
+  padding: 0 calc(2 / 24 * 100%) 5em;
+}
+
+#news-filter {
+  width: calc(4 / 20 * 100%);
+}
+
+#news-list {
+  width: calc(15 / 20 * 100%);
+}
+
+#news-list .date {
+  color: var(--beige-dark);
+}
+
+#news-list .news-item {
+  display: flex;
+  margin-bottom: 5em;
+}
+
+#news-list .news-item img {
+  width: calc(4 / 15 * 100%);
+  margin-right: calc(1 / 15 * 100%);
+  object-fit: cover;
+}
+
+#news-list .news-info a {
+  color: var(--brown);
+  margin-bottom: 0.5em;
+  transition: 0.3s all ease;
+}
+
+#news-list .news-info a:hover {
+  color: var(--teal);
+  transition: 0.3s all ease;
+}
+
+.filter-list {
+  margin: 0 0 2em;
+  padding: 0;
+  border: 1px solid var(--green);
+}
+
+.filter-list span {
+  display: inline-block;
+  background-color: var(--green);
+  padding: 0.7em;
+  color: var(--cream);
+  width: 100%;
+  font-family: var(--martel);
+}
+
+.filter-list li a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.7em;
+  border-top: 1px solid var(--green);
+  color: var(--brown);
+}
+
+.filter-list li a:hover {
+  background-color: var(--beige-light);
+}
+
+#news-article-page {
+  padding: 12em calc(2 / 24 * 100%) 4em;
+}
+
+#news-article-page .date {
+  color: var(--beige-dark);
+}
+
+#news-content {
+  margin-bottom: 4em;
+  padding: 0 calc(2 / 20 * 100%);
+}
+
+#news-content h1 {
+  margin: 1em 0 1em;
+}
+
+#news-content img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
 #footer-cta {
   padding: 5em 0 10em;
   position: relative;
+  background-color: transparent;
   background-size: 100% auto;
   background-position: center;
   text-align: center;

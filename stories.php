@@ -59,7 +59,7 @@
       <div class="footer-cta-content">
         <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
         <h2>Contribute to the cause</h2>
-        <a href="getinvolved.php" class="button cream">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
+        <a href="getinvolved.php" class="button">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
       </div>
       <img src="images/footer-cta-bg.svg" class="footer-cta-bg">
       <div class="overlay"></div>
