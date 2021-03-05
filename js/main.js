@@ -19,14 +19,14 @@
   }
 })();
 
-(function() {
+(function () {
   var select = document.querySelector(".nav-select");
   if (select) {
     select.addEventListener("change", function (e) {
       if (e.target.value) {
         location.href = e.target.value;
       }
-    })
+    });
   }
 })();
 
@@ -95,3 +95,12 @@ function scrollToTargetAdjusted(e) {
     behavior: "smooth",
   });
 }
+
+enterView({
+  selector: ".animate",
+  enter: function (el) {
+    el.classList.add("entered");
+  },
+  offset: 0.8,
+  once: true,
+});

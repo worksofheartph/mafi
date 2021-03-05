@@ -464,19 +464,27 @@ path.animate {
 
 path.green {
   stroke: var(--green);
+}
+
+path.green.entered {
   animation: offset 3s ease forwards, fill-green 1s 1s forwards;
 }
 
 path.beige {
   stroke: var(--beige);
+}
+
+path.beige.entered {
   animation: offset 3s ease forwards, fill-beige 1s 1s forwards;
 }
 
-
 path.dark-beige {
   stroke: var(--beige-dark);
+}
+
+path.dark-beige.entered {
   animation: offset 3s ease forwards, fill-darkbeige 1s 1s forwards;
-} 
+}
 
 #svg-mountain {
   position: absolute;
@@ -491,8 +499,6 @@ path.dark-beige {
   width: 100%;
   height: auto;
 }
-
-
 
 .divider-line {
   margin: 1em 0 4em;
@@ -534,6 +540,9 @@ path.dark-beige {
 
 #home-about path {
   stroke: var(--beige);
+}
+
+#home-about path.entered {
   animation: offset 16s ease forwards, fill-beige 1s 1s forwards;
 }
 
@@ -760,7 +769,7 @@ h1 svg {
   display: inline-block;
 }
 
-.date:before, 
+.date:before,
 #news-cat li a:before {
   display: inline-block;
   width: 10px;
@@ -1047,8 +1056,6 @@ option {
 #news-page {
   padding: 12em calc(2 / 24 * 100%) 4em;
 }
-
-
 
 #prog-hero > svg {
   position: absolute;
@@ -1364,7 +1371,7 @@ span#noEasy:hover {
 .milestone {
   display: flex;
   align-items: baseline;
-  margin: 0 calc( 2 / 24 * 100%);
+  margin: 0 calc(2 / 24 * 100%);
 }
 
 .milestone > .milestone-dot {
@@ -1414,13 +1421,13 @@ span#noEasy:hover {
   background-color: var(--cream);
 }
 
- #milestones .nav-select {
+#milestones .nav-select {
   color: var(--green);
   padding: 0.7em 2.5em 0.5em 1em;
- }
+}
 
 #milestones .dp-list {
-    background-image: url(images/arrow-down-brown.svg);
+  background-image: url(images/arrow-down-brown.svg);
 }
 
 #story-image {
@@ -1442,7 +1449,6 @@ span#noEasy:hover {
 #story-content .author {
   margin-bottom: 2em;
 }
-
 
 #story #home-stories,
 #news-article #home-news {
