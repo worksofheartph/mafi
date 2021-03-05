@@ -3,7 +3,7 @@
   <?php include('menu.php'); ?>
   <section id="home-hero" class="flex">
     <div>
-      <h1>Empowering Communities,<br/>
+      <h1>Empowered Communities,<br/>
       Sustainable Futures</h1>
       <br/>
       <a href="about.php" class="button">LEARN MORE <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>

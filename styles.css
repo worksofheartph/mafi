@@ -277,8 +277,8 @@ img.white {
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  width: 65vw;
-  height: 65vw;
+  width: 50em;
+  height: 50em;
   transform: translate(-50%, -50%) scale(0);
   transition: none;
 }

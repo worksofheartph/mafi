@@ -36,7 +36,7 @@
         <h3>More Info</h3>
         <li><a class="button" onclick="scrollToTargetAdjusted('prog-numbers');">Highlights <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
         <li><a class="button" onclick="scrollToTargetAdjusted('programs-project');">PROJECT BRIEFS <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-        <li><a class="button" onclick="scrollToTargetAdjusted('');">DATA QUICK GLANCES <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
+        <li><a class="button" onclick="scrollToTargetAdjusted('program-data');">DATA QUICK GLANCES <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
         <li><a class="button" onclick="scrollToTargetAdjusted('stories');">STORIES <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
       </ul>
     </div>

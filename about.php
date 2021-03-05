@@ -11,14 +11,14 @@
   <section id="about-vm" class="flex green">
     <div class="container flex">
       <div>
-      <h5>Our Collective Vision</h5>
-      <h3>Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.</h3>
+        <h5>Our Collective Vision</h5>
+        <h3>Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.</h3>
+      </div>
+      <div>
+        <h5>Our Corporate Mission</h5>
+        <h3>Empowered upland dwellers and IP communities, capable of self-direction, and working together in unity and harmony towards achieving the sustained conservation of biodiversity and ecosystem of Mount Apo, and preserving their traditionally-based aspirations, values, and way of life.</h3>
+      </div>
     </div>
-    <div>
-      <h5>Our Corporate Mission</h5>
-      <h3>Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.</h3>
-    </div>
-  </div>
     <?php echo file_get_contents("images/about-vm-bg.svg"); ?>
   </section>
   <section id="about-values">
@@ -41,7 +41,7 @@
       </div>
       <ul class="link-list">
         <h3>Learn More</h3>
-        <li><a class="button" onclick="scrollToTargetAdjusted('recent-milestones');">Milestones <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
+        <li><a href="milestones.php" class="button">Milestones <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
         <li><a class="button" onclick="scrollToTargetAdjusted('about-ar');">Annual Reports <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
         <li><a class="button" onclick="scrollToTargetAdjusted('bot');">Board of Trustees  <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
         <li><a class="button" onclick="scrollToTargetAdjusted('about-partners');">Partners <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
@@ -179,6 +179,19 @@
         Philippine Business for Social Progress (PBSP) through Ms. Virgie Ongkiko (Consultant)<br/>
         Balagot & Company CPA's<br/>
         Mahintana Foundation, Inc.<br/>
+        Carlos/Valdes & Associates<br/>
+        Kapwa Upliftment Foundation<br/>
+        Philippine Eagle Foundation, Inc.<br/>
+        UP Mindanao<br/>
+        Mount Apo Foundation, Inc. Assisted Secondary Schools Association (MAFI ASSA)<br/>
+        MAFI Graduate Society (MGS)<br/>
+        MAFI Parents-Scholars Organization (MAPSO)<br/>
+        Guardians of Lake Venado<br/>
+        Protected Area Management Board (PAMB) – Mt. Apo Natural Park<br/>
+        Kidapawan Federation of Tribal Chieftains (KFTC)<br/>
+        Tuklas Katotobo<br/>
+        Kidapawan Central Marketing Corp.<br/>
+        A.J. High Time Hotel and Restaurant<br/>
       </p>
     </div>
   </section>
