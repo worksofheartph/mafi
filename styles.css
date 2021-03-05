@@ -893,11 +893,13 @@ h1 svg {
 
 #about-video svg {
   fill: var(--cream);
+  transition: 0.3s all ease;
 }
 
 #about-video:hover svg {
   fill: var(--yellow);
   cursor: pointer;
+  transition: 0.3s all ease;
 }
 
 #about-history {
