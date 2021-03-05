@@ -378,10 +378,6 @@ img.white {
   display: inline-block;
 }
 
-.toggle {
-  display: none;
-}
-
 section {
   /*display: flex;*/
   padding: 8em calc(2 / 24 * 100%);
@@ -929,6 +925,11 @@ h1 svg {
 .bot-grid {
   padding: 0em calc(2 / 12 * 100%);
   flex-wrap: wrap;
+  display: none;
+}
+
+.bot-grid.toggled {
+  display: flex;
 }
 
 .bot-grid div {
@@ -1291,6 +1292,64 @@ span#noEasy:hover {
 
 #stories-grid .story-item .story-info p {
   margin: 1.5em 0 2em;
+}
+
+#milestones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline {
+  flex-direction: column;
+  align-items: center;
+  background: url(images/milestones/line.svg) no-repeat center top;
+  background-size: auto contain;
+  padding-bottom: 10em;
+}
+
+.milestone {
+  display: flex;
+  align-items: baseline;
+}
+
+.milestone > .milestone-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--yellow);
+  flex: none;
+  line-height: 0;
+  margin: 25px;
+  transform: translateY(20%);
+}
+
+.milestone > .milestone-image {
+  text-align: right;
+  flex: 1;
+  transform: translateY(50%);
+}
+
+.milestone > .milestone-text {
+  flex: 1;
+}
+
+.milestone > .milestone-text > h5 {
+  font-style: italic;
+  font-family: var(--faustina);
+  font-weight: bold;
+}
+
+.milestone:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.milestone:nth-child(even) > .milestone-image {
+  text-align: left;
+}
+
+.milestone:nth-child(even) > .milestone-text {
+  text-align: right;
 }
 
 #footer-cta {

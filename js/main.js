@@ -3,17 +3,32 @@
   var toggles = document.querySelectorAll(".toggle");
 
   function toggle(el) {
-    if (el.selectedIndex !== 0) {
-      for (var i = 0; i < toggles.length; i++) {
-        toggles[i].style.display = toggles[i].id === el.value ? "flex" : "none";
-      }
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].classList.toggle("toggled", toggles[i].id === el.value);
+    }
+    var label = document.querySelector(".toggle-label");
+    if (label) {
+      label.textContent = el.value;
     }
   }
 
-  select.addEventListener("change", function (e) {
-    toggle(e.target);
-  });
+  if (select) {
+    select.addEventListener("change", function (e) {
+      toggle(e.target);
+    });
+  }
 })();
+
+(function() {
+  var select = document.querySelector(".nav-select");
+  if (select) {
+    select.addEventListener("change", function (e) {
+      if (e.target.value) {
+        location.href = e.target.value;
+      }
+    })
+  }
+})
 
 (function () {
   const root = document.documentElement;
