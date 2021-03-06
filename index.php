@@ -29,7 +29,7 @@
   </section>
   <section id="home-programs">
     <div id="home-programs-slider" class="section-slider">
-      <div class="slider" data-gap="50">
+      <div class="slider" data-gap="80">
         <div class="panel">
           <a href="program-educ.php">
             <h2>Educational Development Program</h2>

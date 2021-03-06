@@ -26,10 +26,10 @@ html {
   --beige-light: #e7dfd7;
   --beige-dark: #a79280;
   --black: #363232;
-  --h1: 2.2rem;
-  --h2: 2.2rem;
-  --h3: 1.2rem;
-  --h4: 1.1rem;
+  --h1:2.2rem;
+  --h2:2.2rem;
+  --h3:1.2rem;
+  --h4:1.1rem;
   --faustina: "Faustina", serif;
   --martel: "Martel Sans", sans-serif;
 }
@@ -244,8 +244,7 @@ img.white {
   fill: var(--brown);
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
 #menuToggle .menu-btn svg:first-child {
@@ -395,6 +394,7 @@ img.white {
 }
 
 section {
+
   /*display: flex;*/
   padding: 8em calc(2 / 24 * 100%);
   position: relative;
@@ -433,6 +433,7 @@ section {
   to {
     stroke-dashoffset: 0;
   }
+
 }
 
 @keyframes fill-green {
@@ -440,6 +441,7 @@ section {
     fill: var(--green);
     stroke: transparent;
   }
+
 }
 
 @keyframes fill-beige {
@@ -447,6 +449,7 @@ section {
     fill: var(--beige);
     stroke: transparent;
   }
+
 }
 
 @keyframes fill-yellow {
@@ -454,6 +457,7 @@ section {
     fill: var(--yellow);
     stroke: transparent;
   }
+
 }
 
 @keyframes fill-darkbeige {
@@ -461,6 +465,15 @@ section {
     fill: var(--beige-dark);
     stroke: transparent;
   }
+
+}
+
+@keyframes fill-lightbeige {
+  to {
+    fill: var(--beige-light);
+    stroke: transparent;
+  }
+
 }
 
 @keyframes fill-cream {
@@ -468,6 +481,7 @@ section {
     fill: var(--cream);
     stroke: transparent;
   }
+
 }
 
 @keyframes fill-teal {
@@ -475,7 +489,10 @@ section {
     fill: var(--teal);
     stroke: transparent;
   }
+
 }
+
+
 
 path.animate {
   stroke-width: 0;
@@ -511,6 +528,15 @@ path.dark-beige.entered {
   animation: offset 3s ease forwards, fill-darkbeige 1s 1s forwards;
 }
 
+path.light-beige {
+  stroke: var(--beige-light);
+}
+
+path.light-beige.entered {
+  stroke-width: 1;
+  animation: offset 3s ease forwards, fill-lightbeige 1s 1s forwards;
+}
+
 path.yellow {
   stroke: var(--yellow);
 }
@@ -525,7 +551,7 @@ path.cream {
 }
 
 path.cream.entered {
-  stroke-width: 1;
+  stroke-width: 2;
   animation: offset 3s ease forwards, fill-cream 1s 1s forwards;
 }
 
@@ -578,6 +604,7 @@ path.teal.entered {
 }
 
 #home-about {
+
   /*  background-image: url(images/datu.svg);
   background-position: bottom center;
   background-size: 100% auto;
@@ -620,11 +647,7 @@ path.teal.entered {
 }
 
 #home-programs-slider {
-  background: linear-gradient(
-    180deg,
-    var(--beige-light) 67%,
-    rgba(0, 0, 0, 0) 67%
-  );
+  background: linear-gradient(180deg, var(--beige-light) 67%, rgba(0, 0, 0, 0) 67%);
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -635,8 +658,34 @@ path.teal.entered {
 #home-programs-slider .slider-prev,
 #home-programs-slider .slider-next {
   position: absolute;
-  top: 50%;
-  z-index: 3000;
+  top: 60%;
+  z-index: 3000;    /*background-color: var(--beige-light);*/
+  width: 3em;
+  padding: 0.25em 0.25em 0.25em 0em;
+}
+
+#home-programs-slider .slider-prev {
+  left: 0;
+}
+
+#home-programs-slider .slider-next {
+  right: 0;
+}
+
+#home-programs-slider .slider-prev svg,
+#home-programs-slider .slider-next svg {
+  fill: var(--green);
+  width: auto;
+  height: 100%;
+  transition: 0.3s all ease;
+}
+
+.slider-prev:hover svg,
+.slider-next:hover svg,
+#home-programs-slider .slider-prev:hover svg,
+#home-programs-slider .slider-next:hover svg {
+  fill: var(--yellow);
+  transition: 0.3s all ease;
 }
 
 #programs-slider {
@@ -771,7 +820,7 @@ h1 svg {
   margin: 0 0.1em;
 }
 
-#home-stories,
+#stories-slider,
 #stories {
   overflow-x: hidden;
 }
@@ -866,11 +915,13 @@ h1 svg {
 }
 
 .story-item:hover {
+
   /*background-color: var(--beige);*/
   cursor: pointer;
 }
 
 .news-grid .news-item:hover {
+
   /*background-color: var(--beige-dark);*/
   cursor: inherit;
 }
@@ -890,8 +941,7 @@ h1 svg {
 
 #home-partners {
   align-items: center;
-  flex-direction: column;
-  /*background-image: url(images/home-partners.svg);*/
+  flex-direction: column;  /*background-image: url(images/home-partners.svg);*/
   background-position: right bottom;
   background-size: auto 80%;
   position: relative;
@@ -1322,12 +1372,9 @@ div#searchBox #searchform input {
 }
 
 .sb-search-submit {
-  background: #fff;
-  /* IE needs this */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 8 */
-  filter: alpha(opacity=0);
-  /* IE 5-7 */
+  background: #fff;  /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  /* IE 8 */
+  filter: alpha(opacity=0);  /* IE 5-7 */
   opacity: 0;
   color: transparent;
   border: none;
@@ -1336,10 +1383,11 @@ div#searchBox #searchform input {
 }
 
 div#searchBox #searchform .sb-icon-search {
+
   /* color: #fff; */
+
   /* background: #3f91c3; */
-  z-index: 90;
-  /* font-size: 22px; */
+  z-index: 90;  /* font-size: 22px; */
   font-family: "FontAwesome";
   speak: none;
   font-style: normal;
@@ -1355,8 +1403,7 @@ div#searchBox #searchform .sb-icon-search:before {
 }
 
 span#noEasy {
-  display: block;
-  /* overflow: hidden; */
+  display: block;  /* overflow: hidden; */
   position: relative;
   width: 30px;
   height: 30px;
@@ -1400,11 +1447,7 @@ span#noEasy:hover {
 
 #stories-page {
   padding: 0 0 5em;
-  background: linear-gradient(
-    180deg,
-    var(--beige-dark) 10%,
-    var(--beige-light) 10%
-  );
+  background: linear-gradient(180deg, var(--beige-dark) 10%, var(--beige-light) 10%);
 }
 
 #stories-grid {
@@ -1537,7 +1580,7 @@ span#noEasy:hover {
   margin-bottom: 2em;
 }
 
-#story #home-stories,
+#story #stories-slider,
 #news-article #home-news {
   padding: 0 calc(2 / 24 * 100%) 5em;
 }
