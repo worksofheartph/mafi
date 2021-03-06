@@ -62,7 +62,7 @@
 (function () {
   var sliders = document.querySelectorAll(".slider");
   sliders.forEach(function (el) {
-    new eg.Flicking(el, {
+    var flicking = new eg.Flicking(el, {
       gap: parseInt(el.dataset.gap, 10),
       anchor: el.dataset.anchor,
       hanger: el.dataset.hanger,
@@ -70,6 +70,16 @@
       overflow: true,
       circular: true,
       duration: 250,
+    });
+    const prev = el.parentNode.querySelector(".slider-prev");
+    prev.addEventListener("click", function (e) {
+      e.preventDefault();
+      flicking.prev();
+    });
+    const next = el.parentNode.querySelector(".slider-next");
+    next.addEventListener("click", function (e) {
+      e.preventDefault();
+      flicking.next();
     });
   });
 })();

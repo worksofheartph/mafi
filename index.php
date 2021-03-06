@@ -1,11 +1,12 @@
 <?php include('header.php'); ?>
+
 <body id="home">
   <?php include('menu.php'); ?>
   <section id="home-hero" class="flex">
     <div>
-      <h1>Empowered Communities,<br/>
-      Sustainable Futures</h1>
-      <br/>
+      <h1>Empowered Communities,<br />
+        Sustainable Futures</h1>
+      <br />
       <a href="about.php" class="button">LEARN MORE <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
     </div>
     <img src="images/home-hero-photo.png">
@@ -17,10 +18,10 @@
       Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.
       <div id="home-about-numbers">
         <h2>
-        320 scholar graduates<br/>
-        33 barangays<br/>
-        9,441 IPs<br/>
-        1 shared vision
+          320 scholar graduates<br />
+          33 barangays<br />
+          9,441 IPs<br />
+          1 shared vision
         </h2>
       </div>
     </div>
@@ -28,31 +29,38 @@
   </section>
   <section id="home-programs">
     <div id="home-programs-slider" class="section-slider">
-      <div
-        class="slider"
-        data-gap="50"
-        data-anchor="0"
-        data-hanger="8.3333%"
-        >
+      <div class="slider" data-gap="50">
         <div class="panel">
-          <a href="program-educ.php"><h2>Educational Development Program</h2>
-            <h5 class="button">LEARN MORE </h5></a>
+          <a href="program-educ.php">
+            <h2>Educational Development Program</h2>
+            <h5 class="button">LEARN MORE </h5>
+          </a>
           <img src="images/banner-program-educ.png">
           <div class="overlay"></div>
         </div>
         <div class="panel">
-          <a href="program-educ.php"><h2>Community and Environment Program</h2>
-          <h5 class="button">LEARN MORE </h5></a>
+          <a href="program-educ.php">
+            <h2>Community and Environment Program</h2>
+            <h5 class="button">LEARN MORE </h5>
+          </a>
           <img src="images/banner-program-envi.png">
           <div class="overlay"></div>
         </div>
         <div class="panel">
-          <a href="program-educ.php"><h2>Cultural Heritage Program</h2>
-          <h5 class="button">LEARN MORE </h5></a>
+          <a href="program-educ.php">
+            <h2>Cultural Heritage Program</h2>
+            <h5 class="button">LEARN MORE </h5>
+          </a>
           <img src="images/banner-program-culture.png">
           <div class="overlay"></div>
         </div>
       </div>
+      <a href="#" class="slider-control slider-prev">
+        <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+      </a>
+      <a href="#" class="slider-control slider-next">
+        <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+      </a>
     </div>
     <div id="home-programs-info" class="two-col">
       <div>
@@ -72,12 +80,7 @@
       <h1>Stories</h1>
       <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
     </div>
-    <div
-      class="stories-list slider"
-      data-gap="30"
-      data-anchor="0"
-      data-hanger="8.3333%"
-      >
+    <div class="stories-list slider" data-gap="30">
       <div class="story-item panel">
         <img src="images/photo-4.png">
         <a href="story.php" class="story-info">
@@ -100,6 +103,12 @@
         </a>
       </div>
     </div>
+    <a href="#" class="slider-control slider-prev">
+      <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+    </a>
+    <a href="#" class="slider-control slider-next">
+      <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+    </a>
   </section>
   <section id="home-news">
     <div class="divider-line"><?php echo file_get_contents("images/svg-divider-line.svg"); ?></div>
@@ -132,10 +141,12 @@
     </div>
   </section>
   <section id="home-partners" class="flex center-title light-beige">
-    <div class="sectiont-title"><h1>Our Partners</h1></div>
-    <br/>
+    <div class="sectiont-title">
+      <h1>Our Partners</h1>
+    </div>
+    <br />
     <img src="images/home-partners-logos.png">
-        <?php echo file_get_contents("images/home-partners.svg"); ?>
+    <?php echo file_get_contents("images/home-partners.svg"); ?>
   </section>
   <footer>
     <div id="footer-cta" style="background-image: url(images/banner-cta-1.png)">

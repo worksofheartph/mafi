@@ -151,9 +151,9 @@ img.white {
 }
 
 .logo img {
-    height: 80px;
-    width: auto;
-    padding: 15px 0;
+  height: 80px;
+  width: auto;
+  padding: 15px 0;
 }
 
 .white header .logo img,
@@ -308,6 +308,7 @@ img.white {
   transition: transform 0.5s ease;
   padding: 6em 0 0;
   min-width: 350px;
+  pointer-events: none;
 }
 
 #menu a {
@@ -323,6 +324,7 @@ img.white {
   text-align: right;
   opacity: 0;
   transition: none;
+  pointer-events: all;
 }
 
 #menu a:hover {
@@ -509,7 +511,7 @@ path.dark-beige.entered {
   animation: offset 3s ease forwards, fill-darkbeige 1s 1s forwards;
 }
 
-path.yellow{
+path.yellow {
   stroke: var(--yellow);
 }
 
@@ -527,7 +529,6 @@ path.cream.entered {
   animation: offset 3s ease forwards, fill-cream 1s 1s forwards;
 }
 
-
 path.teal {
   stroke: var(--teal);
 }
@@ -536,8 +537,6 @@ path.teal.entered {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-teal 1s 1s forwards;
 }
-
-
 
 #svg-mountain {
   position: absolute;
@@ -630,6 +629,14 @@ path.teal.entered {
   display: flex;
   align-items: flex-end;
   height: 600px;
+  position: relative;
+}
+
+#home-programs-slider .slider-prev,
+#home-programs-slider .slider-next {
+  position: absolute;
+  top: 50%;
+  z-index: 3000;
 }
 
 #programs-slider {
@@ -703,6 +710,28 @@ path.teal.entered {
   background: var(--cream);
   width: 100%;
   color: var(--beige-dark);
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+}
+
+.slider-control svg {
+  fill: white;
+}
+
+.slider-prev {
+  left: calc(1 / 24 * 100%);
+  transform: translateY(-50%) scale(4) rotate(180deg);
+}
+
+.slider-next {
+  right: calc(1 / 24 * 100%);
+  transform: translateY(-50%) scale(4);
 }
 
 #home-programs-info {
