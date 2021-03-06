@@ -75,7 +75,7 @@
       </ul>
     </div>
   </section>
-  <section id="home-stories" class="dark-beige">
+  <section id="stories-slider" class="dark-beige">
     <div class="section-heading">
       <h1>Stories</h1>
       <a href="stories.php" class="button light-beige-text">VIEW ALL</a>

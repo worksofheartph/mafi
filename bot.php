@@ -2,7 +2,7 @@
   <div class="dp-list">
     <select name="bot-list" class="toggle-select">
       <option selected="true" disabled="disabled">Year</option>
-      <option value="bot-2020">Present</option>
+      <option value="bot-2020" selected>Present</option>
       <option value="bot-July-2016">July 2016</option>
       <option value="bot-Feb-2015">Feb 2015</option>
       <option value="bot-Dec-2013">Dec 2013</option>
@@ -19,7 +19,7 @@
     </select>
   </div>
   <div clas="dp-options">
-    <div id="bot-2020" class="toggle bot-grid flex center-text">
+    <div id="bot-2020" class="toggle bot-grid flex center-text toggled">
       <div>
         <img src="images/bot/barcena.png">
         <h3>Atty. Allan V. Barcena</h3>
