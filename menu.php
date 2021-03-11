@@ -17,7 +17,7 @@
         <a href="news.php">News & Updates</a>
         <a href="publications.php">Publication</a>
         <a href="">Mt. Apo Park</a>
-        <a href="">Get Involved</a>
+        <a href="getinvolved.php">Get Involved</a>
       </nav>
     </div>
   </div>

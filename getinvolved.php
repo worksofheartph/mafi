@@ -1,149 +1,81 @@
 <?php include('header.php'); ?>
-<body id="getinvolved">
+<body id="getinvolved" class="light-beige">
   <?php include('menu.php'); ?>
-  <section id="home-hero" class="flex">
+  <section id="getinvolved-hero" class="flex cream">
+    <img src="images/getinvolved-hero.png" id="getinvolved-photo">
+    <?php echo file_get_contents("images/svg-mountain-flipped.svg"); ?>
+  </section>
+  <section id="getinvolved-intro" class="flex two-col cream">
     <div>
-      <h1>Empowering Communities,<br/>
-      Sustainable Futures</h1>
-      <br/>
-      <a href="about.php" class="button">LEARN MORE <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
+      <h1>Get Involved</h1>
+      <p>In order for MAFI to sustain its gains and expand its services, we call on your support to our programs and to be part of our next 25 years of journey.</p>
+      <p>Your donation will help us:<br/>
+        <ul>
+          <li>Send poor and deserving children of upland dwellers and indigenous peoples to school;</li>
+          <li>Empower the communities;</li>
+          <li>Promote and conserve indigenous cultural heritage;</li>
+          <li>Protect the environment; and,</li>
+          <li>Build sustainable futures in the Mt. Apo Natural Park</li>
+        </ul>
+      </p>
+      <p>Please give to sustain our noble cause!</p>
     </div>
-    <img src="images/home-hero-photo.png">
-    <?php echo file_get_contents("images/svg-mountain.svg"); ?>
-    <?php echo file_get_contents("images/getinvolved-hero-overlay.svg"); ?>
-  </section>
-  <section id="home-about" class="green center-text">
-    <div id="home-about-intro">
-      Mount Apo Foundation, Inc. empowers the indigenous tribes and other upland dwellers surrounding Mount Apo for the protection and preservation of their environment and culture, allowing them to sustainably prosper far into the future.
-      <div id="home-about-numbers">
-        <h2>
-        320 scholar graduates<br/>
-        33 barangays<br/>
-        9,441 IPs<br/>
-        1 shared vision
-        </h2>
-      </div>
-    </div>
-    <?php echo file_get_contents("images/datu.svg"); ?>
-  </section>
-  <section id="home-programs">
-    <div id="home-programs-slider" class="section-slider">
-      <div
-        class="slider"
-        data-gap="80"
-        data-anchor="0"
-        data-hanger="8.3333%"
-        >
-        <div class="panel">
-          <a href="program-educ.php"><h2>Educational Development Program</h2>
-            <h5 class="button">LEARN MORE </h5></a>
-          <img src="images/banner-program-educ.png">
-          <div class="overlay"></div>
-        </div>
-        <div class="panel">
-          <a href="program-educ.php"><h2>Community and Environment Program</h2>
-          <h5 class="button">LEARN MORE </h5></a>
-          <img src="images/banner-program-envi.png">
-          <div class="overlay"></div>
-        </div>
-        <div class="panel">
-          <a href="program-educ.php"><h2>Cultural Heritage Program</h2>
-          <h5 class="button">LEARN MORE </h5></a>
-          <img src="images/banner-program-culture.png">
-          <div class="overlay"></div>
-        </div>
-      </div>
-    </div>
-    <div id="home-programs-info" class="two-col">
-      <div>
-        <h1>Our Programs <?php echo file_get_contents("images/icon-educ.svg"); ?> <?php echo file_get_contents("images/icon-envi.svg"); ?> <?php echo file_get_contents("images/icon-culture.svg"); ?> </h1>
-        <p>To serve as a catalyst in the total development of cultural communities and Mount Apo through the provision of culturally-acceptable, ecologically-sound and sustainable technologies and process.
+    <div>
+      <div class="link-list">
+        <h3>Donations</h3>
+        <p>For cash donations, fill up our form.</p>
+        <p>
+          <a href="" class="button">DONATION FORM <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
         </p>
+        <p>For in-kind (e.g. equipment, materials, other logistics), contact Armando C. Pacudan at <a href="mailto:acpacudan@mafi.org.ph">acpacudan@mafi.org.ph</a> or on our <a href="">Facebook page Mount Apo Foundation, Inc.</a> </p>
       </div>
-      <ul class="link-list">
-        <h3>More Info</h3>
-        <li><a href="about.php" class="button">What we do <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-        <li><a href="publications.php" class="button">Publications <?php echo file_get_contents("images/svg-arrow.svg"); ?></a></li>
-      </ul>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.03470528993!2d125.08518319999999!3d7.005196299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f8f922455b33d3%3A0xa59213f89bd37b81!2sMount%20Apo%20Foundation%2C%20Inc.!5e0!3m2!1sen!2sph!4v1615428835834!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  <section id="getinvolved-address" class="light-beige">
+    <div class="flex three-col">
+      <div>
+        <h3>Office Address</h3>
+        <p>2114 Eugenio Perez St., Poblacion, <br/>
+          Kidapawan City 9400<br/>
+        North Cotabato, Philippines</p>
+      </div>
+      <div>
+        <h3>Telephone No.</h3>
+        <div class="flex two-col">
+          <span>Program Operations</span>
+          <spanp>(06364) 577-4136</span>
+        </div>
+        <div class="flex two-col">
+          <span>Administration</span>
+          <span>(06364) 577-1831</span>
+        </div>
+        <div class="flex two-col">
+          <span>Executive Director</span>
+          <span>(06364) 577-4137</span>
+        </div>
+      </div>
+      <div>
+        <h3>&nbsp;</h3>
+      info@mafi.org.ph</div>
     </div>
   </section>
-  <section id="stories-slider" class="dark-beige">
-    <div class="section-heading">
-      <h1>Stories</h1>
-      <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
-    </div>
-    <div
-      class="stories-list slider"
-      data-gap="40"
-      data-anchor="0"
-      data-hanger="8.3333%"
-      >
-      <div class="story-item panel">
-        <img src="images/photo-4.png">
-        <a href="story.php" class="story-info">
-          <h3>MAFI’S first Lumad Agricultural Engineering graduate</h3>
-          <h5 class="author">Jan Michael Barila</h5>
-        </a>
-      </div>
-      <div class="story-item panel">
-        <img src="images/photo-5.png">
-        <a href="story.php" class="story-info">
-          <h3>MAFI’s first lawyer scholar now protecting indigenous people’s rights</h3>
-          <h5 class="author">Atty. Ivyrose Paz</h5>
-        </a>
-      </div>
-      <div class="story-item panel">
-        <img src="images/photo-6.png">
-        <a href="story.php" class="story-info">
-          <h3>MAFI’S first Lumad Agricultural Engineering graduate</h3>
-          <h5 class="author">Jan Michael Barila</h5>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="home-news">
-    <div class="divider-line"><?php echo file_get_contents("images/svg-divider-line.svg"); ?></div>
-    <div class="section-heading">
-      <h1>Latest News</h1>
-      <a href="news.php" class="button view-all">VIEW ALL</a>
-    </div>
-    <div class="news-grid">
-      <div class="news-item">
-        <img src="images/photo-1.png">
-        <a href="news-article.php" class="news-info">
-          <h3>Meeting the Challenges of COVID-19 Pandemic: MAFI's pivot in its operations</h3>
-          <h5 class="date" style="--color: var(--yellow)">August 2, 2020</h5>
-        </a>
-      </div>
-      <div class="news-item">
-        <img src="images/photo-2.png">
-        <a href="news-article.php" class="news-info">
-          <h3>MAFI's Response to the 2019 Earthquakes in Mindanao</h3>
-          <h5 class="date" style="--color: var(--green)">August 2, 2020</h5>
-        </a>
-      </div>
-      <div class="news-item">
-        <img src="images/photo-3.png">
-        <a href="news-article.php" class="news-info">
-          <h3>2018 Institutional Pivot: In Search of Strategic and Policy Directions</h3>
-          <h5 class="date" style="--color: var(--red)">August 2, 2020</h5>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section id="home-partners" class="flex center-title light-beige">
-    <div class="sectiont-title"><h1>Our Partners</h1></div>
-    <br/>
-    <img src="images/home-partners-logos.png">
+  <section id="getinvolved-form">
+    <h2 class="center-text">Become a friend of MAFI</h2>
+    <form id="contact-form">
+      <input type="text" name="full-name" placeholder="Full Name *">
+      <input type="text" name="company" placeholder="Company & Designation">
+      <input type="email" name="email-address" placeholder="Email Address *">
+      <input type="text" name="phone" placeholder="Contact Number">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="button">SEND <?php echo file_get_contents("images/svg-arrow.svg"); ?></button>
+    </form>
+        <?php echo file_get_contents("images/home-partners.svg"); ?>
+        <?php echo file_get_contents("images/home-stories.svg"); ?>
+
   </section>
   <footer>
-    <div id="footer-cta" style="background-image: url(images/banner-cta-1.png)">
-      <div class="footer-cta-content">
-        <?php echo file_get_contents("images/icon-0-educ.svg"); ?>
-        <h2>Contribute to the cause</h2>
-        <a href="getinvolved.php" class="button">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
-      </div>
+    <div id="footer-cta">
       <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
-      <div class="overlay"></div>
     </div>
     <?php include('footer.php'); ?>
