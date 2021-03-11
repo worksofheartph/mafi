@@ -52,25 +52,30 @@
   </section>
   <section id="programs-slider">
     <div class="section-slider">
-      <div
-        class="slider"
-        data-gap="80"
-        data-anchor="0"
-        data-hanger="8.3333%"
-        >
+      <div class="slider" data-gap="80">
         <div class="panel">
-          <img src="images/banner-program-educ.png">
+          <img src="images/educ/educ-1.png">
           <span class="panel-caption">lorem ipsum</span>
         </div>
         <div class="panel">
-          <img src="images/banner-program-envi.png">
+          <img src="images/educ/educ-2.png">
           <span class="panel-caption">lorem ipsum</span>
         </div>
         <div class="panel">
-          <img src="images/banner-program-culture.png">
+          <img src="images/educ/educ-3.png">
+          <span class="panel-caption">lorem ipsum</span>
+        </div>
+        <div class="panel">
+          <img src="images/educ/educ-4.png">
           <span class="panel-caption">lorem ipsum</span>
         </div>
       </div>
+      <a href="#" class="slider-control slider-prev">
+        <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+      </a>
+      <a href="#" class="slider-control slider-next">
+        <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+      </a>
     </div>
   </section>
   <section id="programs-project">
@@ -162,7 +167,7 @@
       <h2>Contribute to the cause</h2>
       <a href="getinvolved.php" class="button">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
     </div>
-    <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
+    <?php echo file_get_contents("images/svg-footer-cta-bg.svg"); ?>
     <div class="overlay"></div>
   </div>
   <?php include('footer.php'); ?>

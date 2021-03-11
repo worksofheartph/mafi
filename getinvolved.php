@@ -2,7 +2,6 @@
 <body id="getinvolved" class="light-beige">
   <?php include('menu.php'); ?>
   <section id="getinvolved-hero" class="flex cream">
-    <img src="images/getinvolved-hero.png" id="getinvolved-photo">
     <?php echo file_get_contents("images/svg-mountain-flipped.svg"); ?>
   </section>
   <section id="getinvolved-intro" class="flex two-col cream">
@@ -70,12 +69,12 @@
       <textarea placeholder="Message"></textarea>
       <button type="submit" class="button">SEND <?php echo file_get_contents("images/svg-arrow.svg"); ?></button>
     </form>
-        <?php echo file_get_contents("images/home-partners.svg"); ?>
+        <?php echo file_get_contents("images/svg-man-ground.svg"); ?>
         <?php echo file_get_contents("images/home-stories.svg"); ?>
 
   </section>
   <footer>
     <div id="footer-cta">
-      <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
+      <?php echo file_get_contents("images/svg-footer-cta-bg.svg"); ?>
     </div>
     <?php include('footer.php'); ?>

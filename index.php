@@ -25,7 +25,7 @@
         </h2>
       </div>
     </div>
-    <?php echo file_get_contents("images/datu.svg"); ?>
+    <?php echo file_get_contents("images/svg-datu.svg"); ?>
   </section>
   <section id="home-programs">
     <div id="home-programs-slider" class="section-slider">
@@ -140,13 +140,13 @@
       </div>
     </div>
   </section>
-  <section id="home-partners" class="flex center-title light-beige">
+  <section id="svg-man-ground" class="flex center-title light-beige">
     <div class="sectiont-title">
       <h1>Our Partners</h1>
     </div>
     <br />
     <img src="images/home-partners-logos.png">
-    <?php echo file_get_contents("images/home-partners.svg"); ?>
+    <?php echo file_get_contents("images/svg-man-ground.svg"); ?>
   </section>
   <footer>
     <div id="footer-cta" style="background-image: url(images/banner-cta-1.png)">
@@ -155,7 +155,7 @@
         <h2>Contribute to the cause</h2>
         <a href="getinvolved.php" class="button">GET INVOLVED <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
       </div>
-      <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
+      <?php echo file_get_contents("images/svg-footer-cta-bg.svg"); ?>
       <div class="overlay"></div>
     </div>
     <?php include('footer.php'); ?>

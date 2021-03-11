@@ -20,6 +20,29 @@
 })();
 
 (function () {
+  var select = document.querySelectorAll(".toggle-link");
+  var toggles = document.querySelectorAll(".toggle-content");
+
+  function toggleitem(el, index) {
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].classList.toggle("toggled", toggles[i].id === el.getAttribute("name"));
+    }
+  for (var i = 0; i < select.length; i++) {
+      select[i].classList.toggle("selected", i === index);
+    }
+  }
+
+  if (select) {
+    select.forEach(function(item, i) {
+      item.addEventListener('click', function (e) {
+        toggleitem(e.target, i);
+      });
+    });
+  }
+})();
+
+
+(function () {
   var select = document.querySelector(".nav-select");
   if (select) {
     select.addEventListener("change", function (e) {
@@ -59,30 +82,7 @@
   });
 })();
 
-(function () {
-  var sliders = document.querySelectorAll(".slider");
-  sliders.forEach(function (el) {
-    var flicking = new eg.Flicking(el, {
-      gap: parseInt(el.dataset.gap, 10),
-      anchor: el.dataset.anchor,
-      hanger: el.dataset.hanger,
-      autoResize: true,
-      overflow: true,
-      circular: true,
-      duration: 250,
-    });
-    const prev = el.parentNode.querySelector(".slider-prev");
-    prev.addEventListener("click", function (e) {
-      e.preventDefault();
-      flicking.prev();
-    });
-    const next = el.parentNode.querySelector(".slider-next");
-    next.addEventListener("click", function (e) {
-      e.preventDefault();
-      flicking.next();
-    });
-  });
-})();
+
 
 (function () {
   var staggered = document.querySelector("[data-stagger]");
@@ -107,6 +107,15 @@ function scrollToTargetAdjusted(e) {
 }
 
 enterView({
+  selector: ".animate-early",
+  enter: function (el) {
+    el.classList.add("entered");
+  },
+  offset: 0.3,
+  once: false,
+});
+
+enterView({
   selector: ".animate",
   enter: function (el) {
     el.classList.add("entered");
@@ -114,3 +123,30 @@ enterView({
   offset: 0.9,
   once: true,
 });
+
+
+
+(function () {
+  var sliders = document.querySelectorAll(".slider");
+  sliders.forEach(function (el) {
+    var flicking = new eg.Flicking(el, {
+      gap: parseInt(el.dataset.gap, 10),
+      anchor: el.dataset.anchor,
+      hanger: el.dataset.hanger,
+      autoResize: true,
+      overflow: true,
+      circular: true,
+      duration: 250,
+    });
+    const prev = el.parentNode.querySelector(".slider-prev");
+    prev.addEventListener("click", function (e) {
+      e.preventDefault();
+      flicking.prev();
+    });
+    const next = el.parentNode.querySelector(".slider-next");
+    next.addEventListener("click", function (e) {
+      e.preventDefault();
+      flicking.next();
+    });
+  });
+})();

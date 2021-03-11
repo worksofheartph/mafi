@@ -55,6 +55,6 @@
   </section>
   <footer>
     <div id="footer-cta">
-      <?php echo file_get_contents("images/footer-cta-bg.svg"); ?>
+      <?php echo file_get_contents("images/svg-footer-cta-bg.svg"); ?>
     </div>
     <?php include('footer.php'); ?>

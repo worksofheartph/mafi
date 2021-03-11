@@ -183,9 +183,6 @@ img.white {
   color: var(--green);
 }
 
-.white header #menuToggle .menu-btn svg {
-  fill: var(--cream);
-}
 
 .white header.sticky #menuToggle .menu-btn svg {
   fill: var(--brown);
@@ -359,6 +356,10 @@ img.white {
   background-color: var(--beige-light);
 }
 
+.yellow {
+  background-color: var(--yellow);
+}
+
 .beige-text {
   color: var(--beige);
 }
@@ -387,6 +388,10 @@ img.white {
 
 .flex-start {
   align-items: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .center-title .section-title > * {
@@ -504,7 +509,8 @@ section {
 
 
 
-path.animate {
+.animate path,
+.animate-early path{
   stroke-width: 0;
   stroke-dasharray: 3212;
   stroke-dashoffset: 3212;
@@ -515,7 +521,7 @@ path.green {
   stroke: var(--green);
 }
 
-path.green.entered {
+.entered path.green {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-green 1s 1s forwards;
 }
@@ -524,7 +530,7 @@ path.beige {
   stroke: var(--beige);
 }
 
-path.beige.entered {
+.entered path.beige {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-beige 1s 1s forwards;
 }
@@ -533,7 +539,7 @@ path.dark-beige {
   stroke: var(--beige-dark);
 }
 
-path.dark-beige.entered {
+.entered path.dark-beige {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-darkbeige 1s 1s forwards;
 }
@@ -542,7 +548,7 @@ path.light-beige {
   stroke: var(--beige-light);
 }
 
-path.light-beige.entered {
+.entered path.light-beige {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-lightbeige 1s 1s forwards;
 }
@@ -551,7 +557,7 @@ path.yellow {
   stroke: var(--yellow);
 }
 
-path.yellow.entered {
+.entered path.yellow {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-yellow 1s 1s forwards;
 }
@@ -560,8 +566,8 @@ path.cream {
   stroke: var(--cream);
 }
 
-path.cream.entered {
-  stroke-width: 2;
+.entered path.cream {
+  stroke-width: 1;
   animation: offset 3s ease forwards, fill-cream 1s 1s forwards;
 }
 
@@ -569,7 +575,7 @@ path.teal {
   stroke: var(--teal);
 }
 
-path.teal.entered {
+.entered path.teal {
   stroke-width: 1;
   animation: offset 3s ease forwards, fill-teal 1s 1s forwards;
 }
@@ -584,14 +590,14 @@ path.teal.entered {
 
 #svg-mountain-flipped {
   position: absolute;
-  bottom: 0;
+  bottom: 1em;
   right: 0;
   width: 100%;
   height: auto;
   z-index: 2;
 }
 
-#svg-heroline {
+#svg-line {
   position: absolute;
   bottom: 2em;
   right: 0;
@@ -623,15 +629,15 @@ path.teal.entered {
 }
 
 .three-col > * {
-  width: 32%;
+  width: 33%;
+      padding: 0 1%;
+}
+
+.two-col img {
+  max-width: 100%;
 }
 
 #home-about {
-
-  /*  background-image: url(images/datu.svg);
-  background-position: bottom center;
-  background-size: 100% auto;
-  */
   padding: 8em calc(7 / 24 * 100%);
 }
 
@@ -962,15 +968,15 @@ h1 svg {
   transition: all ease 0.3s;
 }
 
-#home-partners {
+#svg-man-ground {
   align-items: center;
-  flex-direction: column;  /*background-image: url(images/home-partners.svg);*/
+  flex-direction: column;  /*background-image: url(images/svg-man-ground.svg);*/
   background-position: right bottom;
   background-size: auto 80%;
   position: relative;
 }
 
-#home-partners > svg {
+#svg-man-ground > svg {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -999,13 +1005,12 @@ h1 svg {
 #about-video {
 }
 
-#about-video svg {
-  fill: var(--cream);
+#about-video svg path {
   transition: 0.3s all ease;
 }
 
-#about-video:hover svg {
-  fill: var(--yellow);
+#about-video:hover svg path {
+  fill: var(--yellow) !important;
   cursor: pointer;
   transition: 0.3s all ease;
 }
@@ -1036,7 +1041,7 @@ h1 svg {
   width: 100%;
 }
 
-#about-vm > svg {
+#svg-horizon {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1259,6 +1264,7 @@ option {
   transition: 0.3s all ease;
   overflow: hidden;
   border-top-left-radius: 5px;
+  border-bottom-left-radius: 10px;
   margin-right: 2em;
 }
 
@@ -1297,6 +1303,45 @@ option {
   fill: var(--yellow);
   transition: 0.3s all ease;
 }
+
+.park-list-about svg, .park-list-maps svg {
+  fill: var(--teal);
+  transition: 0.3s all ease;
+}
+
+#park-hero #prog-list li svg {
+  stroke-width: 4px;
+  stroke:  var(--cream);
+  opacity: 1;
+  fill: transparent;
+}
+
+#park-hero #prog-list li {
+  border-left: 2px solid var(--cream);
+}
+
+#park-hero #prog-list li.selected,
+#park-hero #prog-list li:hover  {
+  border-left: 2px solid transparent !important;
+}
+
+#park-hero #prog-list li.selected svg,
+#park-hero #prog-list li:hover svg  {
+  stroke:  transparent;
+  opacity: 1;
+  fill: var(--teal);
+}
+
+#park-maplist li a:before{
+  background-color: var(--beige);
+}
+
+
+#park-maplist li a.selected:before,
+#park-maplist li a:hover:before {
+  background-color: var(--teal);
+}
+
 
 #prog-list li:hover > svg,
 #prog-list li.selected > svg {
@@ -1608,11 +1653,11 @@ span#noEasy:hover {
   padding: 0 calc(2 / 24 * 100%) 5em;
 }
 
-#news-filter {
+#news-filter, #map-filter {
   width: calc(4 / 20 * 100%);
 }
 
-#news-list {
+#news-list, #maps {
   width: calc(15 / 20 * 100%);
 }
 
@@ -1692,10 +1737,11 @@ span#noEasy:hover {
 }
 
 #getinvolved-hero {
-/*  background-image: url(images/getinvolved-hero.png);
-  background-size: 90% auto;
-  background-position: top right; */
-  min-height: 40vw;
+    background-image: url(images/getinvolved-mask.svg), url(images/photo-7.png);
+    background-size: 93% auto, 75% auto;
+    background-position: right top, right top;
+    min-height: 40vw;
+    padding: 8em calc(2 / 24 * 100%) 0;
 }
 
 #getinvolved-photo {
@@ -1756,7 +1802,7 @@ iframe {
   padding: 8em calc(2 / 24 * 100%) 10em;
 }
 
-#getinvolved-form #svg-home-partners {
+#getinvolved-form #svg-man-ground {
   position: absolute;
   bottom: 5em;
   right: 0;
@@ -1817,6 +1863,75 @@ form button {
   cursor: pointer;
 }
 
+#park-hero {
+  padding: 12em calc(2 / 24 * 100%) 5em;
+}
+
+#park-hero #prog-list li a {
+  color: var(--cream);
+}
+
+
+#park-about #programs-slider .section-slider {
+  background: transparent;
+}
+
+#park-about h4 {
+  color: var(--green);
+}
+
+#park-overview > svg {
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: auto;
+  height: 80%;
+}
+
+#park-overview > .two-col {
+  margin-left: calc(8 / 24 * 100%);
+}
+
+#park-overview .two-col > *,
+#park-pop .two-col > * {
+  width: 48%;
+}
+
+
+#park-pop > svg {
+  position: absolute;
+  bottom: 0em;
+  right: 0;
+  width: auto;
+  height: 80%;
+}
+
+#park-pop {
+  padding: ;
+}
+
+#park-destinations > .three-col {
+  justify-content: flex-start;
+
+}
+
+#park-destinations > .three-col div {
+  margin-bottom: 6em;
+}
+
+#park-destinations > div img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+#maps img {
+  display: none;
+}
+
+#maps img.toggled {
+  display: block;
+}
 
 #footer-cta {
   padding: 5em 0 10em;
@@ -1867,7 +1982,7 @@ form button {
 }
 
 #footer-cols {
-  padding: 2em calc(2 / 24 * 100%) 15em;
+  padding: 2em calc(2 / 24 * 100%) 10em;
   background-color: var(--green);
   color: var(--cream);
 }
