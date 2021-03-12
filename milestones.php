@@ -15,7 +15,7 @@
     <div class="timeline">
       <div class="milestone">
         <div class="milestone-image">
-          <img src="images/photo-1.png">
+          <!-- <img src="images/photo-1.png"> -->
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -25,7 +25,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="images/photo-1.png">
+          <!-- <img src="images/photo-1.png"> -->
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -35,7 +35,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="images/photo-1.png">
+          <!-- <img src="images/photo-1.png"> -->
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -45,7 +45,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="images/photo-1.png">
+          <!-- <img src="images/photo-1.png"> -->
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -55,7 +55,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="images/photo-1.png">
+          <!-- <img src="images/photo-1.png"> -->
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">
@@ -65,7 +65,7 @@
       </div>
       <div class="milestone">
         <div class="milestone-image">
-          <img src="images/photo-1.png">
+          <!-- <img src="images/photo-1.png"> -->
         </div>
         <div class="milestone-dot"></div>
         <div class="milestone-text">

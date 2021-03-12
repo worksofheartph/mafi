@@ -1874,8 +1874,9 @@ iframe {
   padding: 0;
 }
 
-form input,
-form textarea {
+
+#getinvolved form input,
+#getinvolved form textarea {
   width: 100%;
   padding: 0.5em 0.5em 1em 0.5em;
   margin: 1em 0;
@@ -1886,24 +1887,27 @@ form textarea {
   color: var(--brown);
 }
 
-form input:nth-child(odd), form textarea {
+
+#getinvolved form input:nth-child(odd), form textarea {
   background-image: url(images/form-line-1.svg);
   background-position: bottom left;
   background-size: 100% auto;
 }
 
-form input:nth-child(even) {
+#getinvolved form input:nth-child(even) {
   background-image: url(images/form-line-2.svg);
   background-position: bottom left;
   background-size: 100% auto;
 }
 
 
-form input:focus {
+
+#getinvolved form input:focus {
       outline-width: 0;
 }
 
-form button {
+
+#getinvolved form button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
