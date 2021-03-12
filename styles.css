@@ -1886,7 +1886,7 @@ form textarea {
   color: var(--brown);
 }
 
-form input:nth-child(odd) {
+form input:nth-child(odd), form textarea {
   background-image: url(images/form-line-1.svg);
   background-position: bottom left;
   background-size: 100% auto;
@@ -1898,12 +1898,6 @@ form input:nth-child(even) {
   background-size: 100% auto;
 }
 
-form textarea {
-  border-image-source: url(images/photo-1.png);
-  border: 30px solid transparent;
-  border-image-repeat: stretch;
-  display: inline-block;
-}
 
 form input:focus {
       outline-width: 0;

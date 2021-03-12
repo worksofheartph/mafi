@@ -6,7 +6,9 @@
   </section>
   <section id="getinvolved-intro" class="flex two-col cream">
     <div>
-      <h1>Get Involved</h1>
+      <h2>Get Involved</h2>
+      <p>MAFI’s integrated programs on education, community and environment and cultural heritage made a long way for the last 27 years, making good contribution to the scholarship and empowerment of young indigenous peoples’ children, protection of the environment in the Mt. Apo Natural Park and preserving the culture of the Obo Manobo and the Bago-Tagabawa tribes. The “stories of good harvest”, captured in the foundation’s 25th anniversary coffee table book, documented the initial gains and outcomes achieved through the scholar-graduates, tribal leaders, partners, board and staff.</p>
+
       <p>In order for MAFI to sustain its gains and expand its services, we call on your support to our programs and to be part of our next 25 years of journey.</p>
       <p>Your donation will help us:<br/>
         <ul>
@@ -26,7 +28,7 @@
         <p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScGiEVXNvdEXIbMGFFYRIyhFiN1kEbshc4BeXHt3s-xrf2rYg/viewform?vc=0&c=0&w=1&flr=0&gxids=7757" class="button">DONATION FORM <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
         </p>
-        <p>For in-kind (e.g. equipment, materials, other logistics), contact Armando C. Pacudan at <a href="mailto:acpacudan@mafi.org.ph">acpacudan@mafi.org.ph</a> or on our <a href="">Facebook page Mount Apo Foundation, Inc.</a> </p>
+        <p>For in-kind (e.g. equipment, materials, other logistics), contact Executive Director, Armando C. Pacudan at <a href="mailto:acpacudan@mafi.org.ph">acpacudan@mafi.org.ph</a> or on our <a href="">Facebook page Mount Apo Foundation, Inc.</a> </p>
       </div>
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.03470528993!2d125.08518319999999!3d7.005196299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f8f922455b33d3%3A0xa59213f89bd37b81!2sMount%20Apo%20Foundation%2C%20Inc.!5e0!3m2!1sen!2sph!4v1615428835834!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

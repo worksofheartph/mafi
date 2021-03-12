@@ -1,3 +1,13 @@
+var video = document.getElementById("mafi-video-file");
+
+function pauseVid() { 
+  video.pause(); 
+} 
+
+function playVid() { 
+  video.play(); 
+} 
+
 (function () {
   var select = document.querySelector(".toggle-select");
   var toggles = document.querySelectorAll(".toggle");
