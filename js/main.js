@@ -1,12 +1,12 @@
 var video = document.getElementById("mafi-video-file");
 
-function pauseVid() { 
-  video.pause(); 
-} 
+function pauseVid() {
+  video.pause();
+}
 
-function playVid() { 
-  video.play(); 
-} 
+function playVid() {
+  video.play();
+}
 
 (function () {
   var select = document.querySelector(".toggle-select");
@@ -35,22 +35,24 @@ function playVid() {
 
   function toggleitem(el, index) {
     for (var i = 0; i < toggles.length; i++) {
-      toggles[i].classList.toggle("toggled", toggles[i].id === el.getAttribute("name"));
+      toggles[i].classList.toggle(
+        "toggled",
+        toggles[i].id === el.getAttribute("name")
+      );
     }
-  for (var i = 0; i < select.length; i++) {
+    for (var i = 0; i < select.length; i++) {
       select[i].classList.toggle("selected", i === index);
     }
   }
 
   if (select) {
-    select.forEach(function(item, i) {
-      item.addEventListener('click', function (e) {
+    select.forEach(function (item, i) {
+      item.addEventListener("click", function (e) {
         toggleitem(e.target, i);
       });
     });
   }
 })();
-
 
 (function () {
   var select = document.querySelector(".nav-select");
@@ -92,8 +94,6 @@ function playVid() {
   });
 })();
 
-
-
 (function () {
   var staggered = document.querySelector("[data-stagger]");
   Array.from(staggered.children).forEach(function (el, i) {
@@ -133,8 +133,6 @@ enterView({
   offset: 0.9,
   once: true,
 });
-
-
 
 (function () {
   var sliders = document.querySelectorAll(".slider");
