@@ -108,19 +108,19 @@
     </div>
     <div id="data-grid" class="flex">
       <a href="" class="data-item">
-        <img src="images/data.png"><br/>
+        <img src="images/data.png">
         List of CDSP Scholar graduates as of June 2016
       </a>
       <a href="" class="data-item">
-        <img src="images/data.png"><br/>
+        <img src="images/data.png">
         List of CDSP Scholar graduates as of June 2016
       </a>
       <a href="" class="data-item">
-        <img src="images/data.png"><br/>
+        <img src="images/data.png">
         List of CDSP Scholar graduates as of June 2016
       </a>
       <a href="" class="data-item">
-        <img src="images/data.png"><br/>
+        <img src="images/data.png">
         List of CDSP Scholar graduates as of June 2016
       </a>
     </div>

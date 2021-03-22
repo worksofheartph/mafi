@@ -5,7 +5,7 @@
     <div class="section-title">
       <h1>Publications</h1>
     </div>
-    <div class="flex flex-start">
+    <div id="pub-heading" class="flex flex-start">
       <div id="pub-filters" class="flex">
         <div class="dp-list">
           <select name="filter-year" onchange="showHide(this)">

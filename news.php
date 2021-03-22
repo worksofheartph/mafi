@@ -6,7 +6,40 @@
       <h1>Latest News</h1>
     </div>
     <div id="news-container" class="flex flex-start">
-      <div id="news-filter">
+<div id="mobile-heading" class="flex flex-start mobile-only">
+  <div id="pub-filters" class="flex">
+    <div class="dp-list">
+      <select name="filter-year" onchange="showHide(this)">
+        <option selected="true" disabled="disabled">Year</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+      </select>
+    </div>
+    <div class="dp-list">
+      <select name="filter-type" onchange="showHide(this)">
+        <option selected="true" disabled="disabled">Type</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="x">C</option>
+      </select>
+    </div>
+    <div class="dp-list">
+      <select name="filter-prog" onchange="showHide(this)">
+        <option selected="true" disabled="disabled">Program</option>
+        <option value="educ">Education</option>
+        <option value="envi">Community and Environment</option>
+        <option value="culture">Cultural Heritage</option>
+      </select>
+    </div>
+  </div>
+</div>
+    <div id="news-filter">
         <ul id="news-cat" class="filter-list">
           <span>Category</span>
           <li><a href="" style="--color: var(--teal)">News</a></li>

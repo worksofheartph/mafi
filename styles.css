@@ -129,10 +129,10 @@ p a:hover {
 
 .svg-arrow {
   fill: var(--brown);
-  margin-left: 0.5em;
   margin-bottom: 0.1em;
   vertical-align: middle;
   transition: all ease 0.25s;
+  width: 0.5em;
 }
 
 .button:hover .svg-arrow {
@@ -199,6 +199,7 @@ img.white {
 
 #header-menu > a {
   margin: 0 1em;
+  text-align: right;
 }
 
 #menuToggle {
@@ -425,7 +426,8 @@ section {
 }
 
 #home-hero {
-  min-height: 100%;
+  height: 100%;
+  max-height: 600px;
   padding-top: 0;
   padding-bottom: 0;
   position: relative;
@@ -433,7 +435,7 @@ section {
 }
 
 #home-hero div {
-  width: 50%;
+  width: 100%;
   z-index: 2;
   position: relative;
 }
@@ -809,19 +811,22 @@ path.teal {
   z-index: 3000;
   display: flex;
   align-items: center;
+    background-color: rgb(0 0 0 / 56%);
+    padding: 0.3em 0.25em 0.2em 0.35em;
+    border-radius: 100px;
 }
 
 .slider-control svg {
-  fill: white;
+  fill: var(--cream);
 }
 
 .slider-prev {
-  left: calc(1 / 24 * 100%);
+  left: calc(2 / 24 * 100%);
   transform: translateY(-50%) scale(4) rotate(180deg);
 }
 
 .slider-next {
-  right: calc(1 / 24 * 100%);
+  right: calc(2 / 24 * 100%);
   transform: translateY(-50%) scale(4);
 }
 
@@ -1402,6 +1407,10 @@ option {
   fill: var(--teal);
 }
 
+#park-maplist {
+  padding-bottom: 0;
+}
+
 #park-maplist li a:before{
   background-color: var(--beige);
 }
@@ -1454,6 +1463,14 @@ option {
 
 #pub-page {
   padding: 15em calc(2 / 24 * 100%) 0em;
+}
+
+#pub-heading {
+
+}
+
+#pub-heading > * {
+  margin-bottom: 1em;
 }
 
 #pub-filters {
@@ -1721,6 +1738,10 @@ span#noEasy:hover {
 #story #stories-slider,
 #news-article #home-news {
   padding: 0 calc(2 / 24 * 100%) 5em;
+}
+
+#mobile-heading {
+  margin-bottom: 2em;
 }
 
 #news-filter, #map-filter {
@@ -2077,7 +2098,16 @@ iframe {
   transition: all ease 0.3s;
 }
 
+.mobile-only {
+  display: none;
+}
+
+
 @media screen and (max-width: 1023px) {
+
+.mobile-only {
+  display: block;
+}
 
   :root {
     --h1: 1.5em;
@@ -2095,23 +2125,68 @@ iframe {
 
   .two-col, .three-col,
   .stories-list, .news-grid, .mile-grid,
-  #footer-cols {
+  #footer-cols, #about-vm .container,
+  #values, #pub-list li, #pub-list .pub-info,
+  #data-grid, #pub-heading, #news-container,
+  #news-list .news-item {
     display: block;
   }
 
   .two-col > *, .two-col > *:first-child, .two-col > *:nth-child(2), .three-col > *,
-  #footer-cols > div {
-    width: 100%;
+  #footer-cols > div,
+  #about-vm .container > *,
+  #values > div, .data-item {
+    width: 100% !important;
     padding: 0;
-
+    margin-bottom: 2em;
   }
 
-  .story-item, .mile-item {
+  #pub-list .pub-info > * {
+    display: inline-block;
+  }
+
+  #park-overview > svg,
+  #park-pop > svg {
+    display: none;
+  }
+
+  #park-overview > .two-col {
+    margin-left: 0;
+  }
+
+  .story-item {
     width: 60%;
   }
 
-  .news-grid .news-item {
+  .news-grid .news-item, .mile-item,
+  #news-list, #maps,
+  #news-list .news-item img {
     width: 100%;
+  }
+
+  #about .dp-list {
+    width: calc(8 / 12 * 100%);
+  }
+
+  .bot-grid div {
+    width: 100%;
+    margin: 0 0 2em;
+    text-align: left;
+  }
+
+  .bot-grid div img, .data-item img {
+    width: 40%;
+    float: left;
+    margin-right: 1em;
+  }
+
+  #news-list .news-item img  {
+    margin-bottom: 1em;
+  }
+
+  .data-item {
+    display: inline-block;
+    padding: 0.5em;
   }
 
   section {
@@ -2129,9 +2204,11 @@ iframe {
     padding: 2em calc(2 / 24 * 100%) 2em;
   }
 
-  #footer-cols > div {
-    margin-bottom: 1em;
+  #contact-form {
+    padding: 0;
   }
+
+
 
   #footer-cols > div > img {
     width: 80%;
@@ -2141,10 +2218,58 @@ iframe {
   #stories-slider {
     padding-bottom: 0em;
   }
+
+  .popup {
+    width: 90%;
+    top: 10vw;
+  }
+
+  #prog-hero > svg {
+    position: absolute;
+    right: 2em;
+    top: 5em;
+    height: 40%;
+    width: auto;
+  }
+
+  #stories-hero > svg {
+    position: absolute;
+    right: 2em;
+    top: 5em;
+    height: 65%;
+    width: auto;
+  }
+
+  #prog-hero, #stories-hero {
+    align-items: flex-end;
+    padding: 8em calc(1 / 24 * 100%) 4em;
+  }
+
+  #stories-grid .story-item {
+    width: 100%;
+  }
+
+  #news-filter, #map-filter {
+    display: none;
+  }
+
+
 }
 
 @media screen and (max-width: 550px) {
-  .story-item, .mile-item {
+  .story-item {
     width: 80%;
+  }
+
+    #svg-mountain, #home-hero img {
+    height: 30%;
+  }
+
+  #prog-hero > svg {
+    position: absolute;
+    right: 1em;
+    top: 5em;
+    height: 28%;
+    width: auto;
   }
 }

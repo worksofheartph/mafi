@@ -20,6 +20,23 @@
     <?php echo file_get_contents("images/svg-horizon.svg"); ?>
   </section>
   <section id="park-maplist">
+    <div id="mobile-heading" class="flex flex-start mobile-only">
+      <div id="pub-filters" class="flex">
+        <div class="dp-list">
+          <select name="filter-map" class="toggle-select">
+            <option selected="true" disabled="disabled">Map</option>
+            <option value="map-drainage" selected="">Drainage</option>
+            <option value="map-elevation">Elevation</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+          </select>
+        </div>
+    </div>
+  </div>
     <div class="two-col">
       <div id="map-filter">
         <ul id="news-cat" class="filter-list">
@@ -37,16 +54,16 @@
         </ul>
       </div>
     <div id="maps">
-      <img id="map-drainage" class="toggle-content toggled" src="images/park/map-drainage.png"/>
-      <img id="map-elevation" class="toggle-content" src="images/park/map-elevation.png"/>
-      <img id="map-erosion" class="toggle-content" src="images/park/map-erosion.png"/>
-      <img id="map-habitat" class="toggle-content" src="images/park/map-habitat.png"/>
-      <img id="map-infrastructure" class="toggle-content" src="images/park/map-infrastructure.png"/>
-      <img id="map-management" class="toggle-content" src="images/park/map-managementzone.png"/>
-      <img id="map-slope" class="toggle-content" src="images/park/map-slope.png"/>
-      <img id="map-soil" class="toggle-content" src="images/park/map-soil.png"/>
-      <img id="map-tenurial" class="toggle-content" src="images/park/map-tenurial.png"/>
-      <img id="map-vegetative" class="toggle-content" src="images/park/map-vegetative.png"/>
+      <img id="map-drainage" class="toggle-content  toggle toggled" src="images/park/map-drainage.png"/>
+      <img id="map-elevation" class="toggle-content toggle " src="images/park/map-elevation.png"/>
+      <img id="map-erosion" class="toggle-content toggle " src="images/park/map-erosion.png"/>
+      <img id="map-habitat" class="toggle-content toggle " src="images/park/map-habitat.png"/>
+      <img id="map-infrastructure" class="toggle-content toggle " src="images/park/map-infrastructure.png"/>
+      <img id="map-management" class="toggle-content toggle " src="images/park/map-managementzone.png"/>
+      <img id="map-slope" class="toggle-content toggle " src="images/park/map-slope.png"/>
+      <img id="map-soil" class="toggle-content toggle " src="images/park/map-soil.png"/>
+      <img id="map-tenurial" class="toggle-content toggle " src="images/park/map-tenurial.png"/>
+      <img id="map-vegetative" class="toggle-content toggle " src="images/park/map-vegetative.png"/>
     </div>
   </div>
 </section>
