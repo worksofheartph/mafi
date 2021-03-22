@@ -126,17 +126,12 @@
     </div>
   </div>
 </section>
-<section id="stories" class="dark-beige">
+<section id="stories-slider" class="dark-beige">
   <div class="section-heading">
     <h1>Stories</h1>
     <a href="stories.php" class="button light-beige-text">VIEW ALL</a>
   </div>
-  <div
-    class="stories-list slider"
-    data-gap="40"
-    data-anchor="0"
-    data-hanger="8.3333%"
-    >
+  <div class="stories-list slider" data-gap="30">
     <div class="story-item panel">
       <img src="images/photo-4.png">
       <a href="story.php" class="story-info">
@@ -159,6 +154,12 @@
       </a>
     </div>
   </div>
+  <a href="#" class="slider-control slider-prev">
+    <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+  </a>
+  <a href="#" class="slider-control slider-next">
+    <?php echo file_get_contents("images/svg-arrow.svg"); ?>
+  </a>
 </section>
 <footer>
   <div id="footer-cta" style="background-image: url(images/banner-cta-1.png)">
