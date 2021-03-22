@@ -4,7 +4,19 @@
   <section id="about-hero" class="flex">
     <div id="about-hero-intro">
       <h1>Our Shared Vision</h1>
-      <div id="about-video"><?php echo file_get_contents("images/svg-play.svg"); ?></div>
+      <a id="about-video" href="#video"><?php echo file_get_contents("images/svg-play.svg"); ?></a>
+    </div>
+    <div id="video" class="overlay-video">
+      <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <h3>Chasing Dreams, Changing Destinies</h3>
+          <video width="100%" height="400" controls>
+            <source src="mafi-video.m4v" type="video/mp4" autoplay>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
     <div class="overlay"></div>
   </section>

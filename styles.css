@@ -1015,6 +1015,57 @@ h1 svg {
   transition: 0.3s all ease;
 }
 
+.overlay-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+}
+.overlay-video:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+    position: absolute;
+    top: 8vw;
+    bottom: 0;
+  margin: auto;
+  padding: 20px;
+  background: var(--cream);
+  color: var(--green);
+  border-radius: 5px;
+  width: 710px;
+  height: auto;
+  position: relative;
+  transition: all 5s ease-in-out;
+  padding: 20px 20px 10px 20px;
+}
+
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: var(--teal);
+}
+.popup .content {
+  overflow: auto;
+}
+
 #about-history {
   padding: 5em 0;
 }
@@ -1710,7 +1761,8 @@ span#noEasy:hover {
   color: var(--brown);
 }
 
-.filter-list li a:hover {
+.filter-list li a:hover,
+.filter-list li a.selected {
   background-color: var(--beige-light);
 }
 
@@ -1810,7 +1862,7 @@ iframe {
   height: auto;
 }
 
-#getinvolved-form #svg-home-stories {
+#getinvolved-form #svg-man {
   position: absolute;
   bottom: 5em;
   left: 0;

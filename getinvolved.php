@@ -24,7 +24,7 @@
         <h3>Donations</h3>
         <p>For cash donations, fill up our form.</p>
         <p>
-          <a href="" class="button">DONATION FORM <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScGiEVXNvdEXIbMGFFYRIyhFiN1kEbshc4BeXHt3s-xrf2rYg/viewform?vc=0&c=0&w=1&flr=0&gxids=7757" class="button">DONATION FORM <?php echo file_get_contents("images/svg-arrow.svg"); ?></a>
         </p>
         <p>For in-kind (e.g. equipment, materials, other logistics), contact Armando C. Pacudan at <a href="mailto:acpacudan@mafi.org.ph">acpacudan@mafi.org.ph</a> or on our <a href="">Facebook page Mount Apo Foundation, Inc.</a> </p>
       </div>
@@ -70,7 +70,7 @@
       <button type="submit" class="button">SEND <?php echo file_get_contents("images/svg-arrow.svg"); ?></button>
     </form>
         <?php echo file_get_contents("images/svg-man-ground.svg"); ?>
-        <?php echo file_get_contents("images/home-stories.svg"); ?>
+        <?php echo file_get_contents("images/svg-man.svg"); ?>
 
   </section>
   <footer>
